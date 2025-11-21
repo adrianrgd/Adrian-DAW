@@ -1,0 +1,9 @@
+¿Qué diferencia hay entre un <div> y un <p>? 
+    La diferencia principal es que <div> es un contenedor genérico de nivel de bloque utilizado para 
+    agrupar otros elementos, mientras que <p> es un elemento semántico específico que representa un párrafo de texto.
+
+¿Podrías añadir otra <div> con un texto diferente y otro color de fondo?
+    Sí, con un nuevo <div> con un texto y color de fondo diferentes, se deberia crear una nueva etiqueta <div> con nuevo css.
+
+¿Qué hace el atributo colspan="3"? 
+    Hace que los textos se queden en su columna.

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>SoundVibes | Tu música, tu estilo</title>
+</head>
+<body>
+  <header class="encabezado">
+    <div class="marca">
+      <img class="logo" src="imagenes/logo.png" alt="Logo de SoundVibes">
+      <h1>SoundVibes</h1>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="artistas.html">Artistas</a></li>
+        <li><a href="playlist.html">Playlist</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenedor">
+    <section class="seccion">
+      <h2>Álbumes Destacados</h2>
+      <picture class="album">
+        <source srcset="imagenes/album-grande.png" type="image/png">
+        <img src="imagenes/album-pequeño.png" alt="Portada del álbum destacado">
+      </picture>
+      <div class="album-info">
+        <p>Explora los lanzamientos más recientes y los discos más escuchados del mes.</p>
+      </div>
+      <h2>Videoclip de la Semana</h2>
+      <div class="video-contenedor">
+        <video controls autoplay muted loop>
+          <source src="videos/videoClip.mp4" type="video/mp4">
+          Tu navegador no soporta el elemento de video.
+        </video>
+      </div>
+    </section>
+    <aside class="lateral">
+      <h3>Artistas Favoritos</h3>
+      <ul class="lista-artistas">
+        <li><img src="imagenes/artista1.png" alt="Bad Bunny"><span>Bad Bunny</span></li>
+        <li><img src="imagenes/OIP.webp" alt="Wallows"><span>Wallows</span></li>
+        <li><img src="imagenes/artista3.png" alt="Travis Scott"><span>Travis Scott</span></li>
+      </ul>
+      <p class="comentario">Descubre más artistas y crea tu propia lista personalizada.</p>
+    </aside>
+  </main>
+  <footer class="pie">
+    <p>© 2025 SoundVibes — Tu música, tu estilo — Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

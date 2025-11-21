@@ -1,0 +1,158 @@
+1. Diseña un algoritmo que define el funcionamiento de una busqueda de un producto en un catalogo.
+
+algoritmo BusquedaProducto 
+    Introducir producto de busqueda
+    hacer click en "buscar"
+    conectar la base de datos
+    buscar el producto
+    si se encuentra
+        retornar registros que coinciden
+        mostrar productos en pantalla
+    si no
+        mostrar mensaje "no encontrado"
+
+Fin BusquedaProducto
+
+2. Diseña un algoritmo para definir la preparacion de un desayuno.
+
+algoritmo PreparacionDesayuno
+    Levantarse de la cama
+    Si no me levanto
+        No desayunas
+    Si me levanto
+        Introducir Ingredientes
+        Si no hay Ingredientes
+            Mostrar Error
+        Si hay Ingredientes
+            Quitar Ingredientes en mal estado
+            Si todo esta caducado
+                Mostrar Error
+            Si no lo esta todo
+                Introducir DesayunoFinal
+
+Fin PreparacionDesayuno
+
+3. Plantea un algoritmo para calcular el cambio a devolver a un cliente en una tienda.
+
+algoritmo DevolverCambio
+    Introducir importe
+    Si paga en efectivo
+        Si supera 200€
+            Cancelar compra
+        Si no supera 200€
+            Continuar compra
+    Si paga con tarjeta
+        Si no hay dinero suficiente
+            Mostrar Error
+        Si hay dinero suficiente
+            Continuar compra
+    Realizar el pago de la compra
+    Si el importe es menor al precio de la compra
+        Mostrar Error
+    Si el importe es mayor al precio de la compra
+        Calcular dinero a devolver
+        Preguntar si quiere cambio
+            Si quiere
+                Devolver cambio
+            Si no
+                Finalizar compra
+
+Fin DevolverCambio
+
+algoritmo costeViaje
+    solicita distancia
+    solicita precioLitro
+    solicita consumo
+
+    litrosNecesarios = distancia/100
+
+    costeTotal = litrosNecesarios*precioLitro
+
+
+    mostrar costeTotal
+
+Fin costeViaje
+
+algoritmo organizarRopa
+    Armario lleno de prendas de ropa y tenemos 3 cajones donde colocarlas segun su tipo.
+    Diferenciar prendas de ropa en Camiseta, Pantalon y Abrigo
+    Vaciar Armario
+    Colocar las prendas segun su tipo
+    Si es Camiseta cajon 1
+    Si es Pantalon cajon 2
+    Si es Abrigo cajon 3
+    Meter en los cajones la ropa que se indentifique como Camiseta, Pantalon o Abrigo
+    Si no en otra parte del Armario
+
+algoritmo atenderClientes
+    Cola de Clientes
+    Repetir si hay más clientes
+        Escanear productos
+        Calcular total compra
+        Solicitar importe
+        Si el importe supera el total de compra
+            Devolver cambio
+        Despedir Cliente
+    Fin Repetir
+    Si no hay mas Clientes
+        Cerrar caja
+
+Fin atenderClientes
+
+algoritmo SumarNumeros
+    Solicitar dos variables al usuario
+    Introducir variables "n1" y "n2"
+    Verificar que ambos son numeros enteros
+    Si no son numeros enteros
+        Mostrar Error
+    Si son numeros enteros ejecutar una operacion que sume los 2 numeros
+    n1 + n2 = ResultadoTotal
+    Mostrar ResultadoTotal
+
+Fin SumarNumeros
+
+algoritmo VerificarNumero
+    Solicitar una variable "n" al usuario
+    Verificar si el numero es Positivo, Negativo o 0
+    Si "n" se define mayor a 0
+        Devolver 'Es Positivo'
+    si no
+    Si "n" se define menor a 0
+        Devolver 'Es Negativo'
+        Si no
+    Si "n" se define como 0
+        Devolver 'Es 0'
+        Fin Si
+    Fin Si
+
+Fin VerificarNumero
+
+algoritmo VerificarEdad
+    Solicitar una variable "y" al usuario
+    Verificar si "y" es mayor o menor a 18
+    Si "y" es menor a 18
+        Mostrar en pantalla 'No puedes votar'
+    si no
+    Si "y" es mayor o igual a 18
+        Mostrar en pantalla 'Si puedes votar'
+        Fin si
+    Fin Si
+
+Fin VerificarEdad
+
+algoritmo Circulo
+    Variable radio
+    Solicitar valor del radio
+    ejecutar el siguiente calculo: 3.14 * (radio ** 2)
+    Devolver Resultado
+
+Fin Circulo
+
+algoritmo ParOImpar
+    Variable "x"
+    Si "x" es un valor numerico realizar una operacion
+        Si (numero % 2 == 0) = Par
+        Si (numero % 2 == 1) = Impar
+    Fin Si
+
+Fin ParOImpar

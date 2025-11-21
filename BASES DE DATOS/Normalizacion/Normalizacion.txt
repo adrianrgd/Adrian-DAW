@@ -1,0 +1,32 @@
+1. (Hasta 1FN) Esta en 1FN.
+
+EMPLEADO_PROY (P·dniEmpl, Nombre_Empleado)
+PROYECTO (P·CodProyecto, proyecto_asignado, PF·dniEmpl)
+
+2. (Hasta 2FN) Relacion en 1FN - Todos los valores son unicos.
+    No esta en 2FN porque Nombre_Empleado y precio dependen funcionalmente de Producto_id pero no de pedido_id
+
+PRODUCTO (PK·Producto_id, Nombre_Producto, precio)
+PEDIDO_DETALLE (PKFK·pedido_id, PKFK·Producto_id, cantidad)
+
+3. (Hasta 3FN) Esta en 1FN. 
+    Esta en 2FN porque todos los atributos no clave dependen funcionalmente de la clave primaria.
+    No esta en 3FN porque hay un atributo (ciudad_oficina) que no depende DIRECTAMENTE de la primaria.
+    En este caso lo hace a traves de 'oficina_id' (De forma transitiva).
+
+EMPLEADO_OFICINA (PK·dniEmpl, Nombre_Empleado, FK·oficina_id -> oficina)
+OFICINA (PK·oficina_id, ciudad_oficina)
+
+4. (Hasta 2FN) No esta en 1FN porque los valores no son atomicos, y hay atributos multivaluados.
+
+ALUMNO (PK·AlumnoID, Nombre, NotaFinal)
+CURSO (PK·CursoID, PKFK·AlumnoID -> Alumno)
+PROFESOR (PK·Profesor_Curso)
+
+Tampoco esta en 2FN, hay atributos que no depende de la primaria, en este caso NotaFinal con Alumno y 
+Profesor no esta relacionado con el Alumno.
+
+ALUMNO (PK·AlumnoID, nombre)
+INSCRIPCION_CURSO (PKFK·AlumnoID -> Alumno, PKFK·CursoID -> Curso)
+CURSO (PK·CursoID, Nombre_Curso, NotaFinal)
+PROFESOR (PK·ProfesorID, Nombre, PKFK·CursoID -> Curso)

@@ -1,0 +1,6 @@
+Programador (P·dniProg, Nombre, Ap1, N·Ap2, Direccion, Cuenta, Telefono, Tipo, F·dniMentor -> Programador, F-CodDep -> Departamento)
+Departamento (P·CodDep, Nombre, Ubicacion, PF·CodSede -> Sede)
+Sede (P·CodSede, Nombre, Direccion, F·CodSede)
+Equipo (P·CodEquipo, Descripcion, F·dniProg -> Programador)
+EquipoProg (PF·CodEquipo -> Equipo, PF·dniProg -> Programador, PF·CodProy -> Proyecto)
+Proyecto (P·CodProy, Descripcion, fechaIni, N·fechaFin)

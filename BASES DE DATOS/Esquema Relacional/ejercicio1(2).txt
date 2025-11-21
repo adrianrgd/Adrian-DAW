@@ -1,0 +1,13 @@
+Programador (P·secuencia, Nombre, Ap1, N·Ap2, Direccion, Cuenta, Telefono, Tipo, F·secuenciaMentor -> Programador, 
+F·CodSedeMentor -> Sede, F·CodDepMentor -> Departamento, PF·CodSede -> Sede, PF-CodDep -> Departamento)
+
+Departamento (P·CodDep, Nombre, Ubicacion, PF·CodSede -> Sede)
+
+Sede (P·CodSede, Nombre, Direccion)
+
+Equipo (P·CodEquipo, Descripcion, F·secuencia -> Programador, F·CodDep -> Programador, F·CodSede -> Programador)
+/*F·secuencia, F·CodDep, F·CodSede -> Programador*/
+
+EquipoProg (PF·CodEquipo -> Equipo, P(F·secuencia, F·CodDep, F·CodSede -> Programador))
+
+Proyecto (P·FechaIni, Descripcion, N·fechaFin, PF·CodEquipo -> Equipo, F·fechaIniSubProy -> Proyecto, F·CodEquipoSubProy -> Proyecto)

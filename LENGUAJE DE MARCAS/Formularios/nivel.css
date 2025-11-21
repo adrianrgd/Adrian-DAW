@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(255, 247, 237);
+    font-family: Rubik, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+/* MENÚ */
+.menu {
+    width: 100%;
+    background-color: #232325;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.menu-link:hover {
+    background-color: #004caf;
+    transform: translateY(-2px);
+}
+
+.menu-link.active {
+    background-color: #004caf;
+    color: #ffffff;
+}
+
+/* FORMULARIO */
+form {
+    background-color: #232325;
+    width: 350px;
+    padding: 30px 25px;
+    margin: 50px auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+form label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+form input {
+    border: 2px solid #000000;
+    border-radius: 10px;
+    height: 40px;
+    padding-inline: 10px;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #004caf;
+    border-radius: 7px;
+    height: 40px;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #0061dd;
+    transform: translateY(-2px);
+}

@@ -1,0 +1,22 @@
+.caja { 
+  background-color: lightblue; 
+  border: 2px solid blue; 
+  padding: 20px; 
+  margin: 20px; 
+}
+
+.ul {
+    font-family: Righteous;
+}
+
+.table { 
+border-collapse: collapse; 
+border: 1px solid #333; 
+} 
+th, td { 
+border: 1px solid #999; 
+padding: 8px; 
+} 
+thead { 
+background-color: #f2f2f2; 
+} 

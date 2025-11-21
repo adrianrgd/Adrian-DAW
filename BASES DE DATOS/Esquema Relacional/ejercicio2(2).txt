@@ -1,0 +1,21 @@
+DatosPersonales (P·dniDatPers, Nombre, prApellido, N·sgApellido, Domicilio)
+
+Telefonos (P·numTelefono, NF·dniDatPers -> DatosPersonales, NF·dniTec -> Tecnico)
+Correos (P·direccionCorreo, NF·dniDatPers -> DatosPersonales, NF·dniTec -> Tecnico)
+Comercial (comision, PF·dniCom -> DatosPersonales)
+Vendedor (Turno, PF·dniVen -> DatosPersonales, F·CodOficina -> Oficina)
+Cliente (NumTarjeta, PF·dniCli -> DatosPersonales)
+Director (PF·dniDirector -> DatosPersonales, F·CodOficina -> Oficina)
+
+Oficina (P·CodOficina, Direccion, Telefono, F·dniCom -> Comercial, F-dniDirector -> Director)
+
+Venta (P·CodVenta, Fecha, NumLineaVenta, Tipo, F·dniVen -> Vendedor, F·dniCli -> Cliente)
+LineaVenta (Cantidad, PF·ISBN -> Libro, PF·CodVenta -> Venta)
+
+Libro (P·ISBN, Descripcion, N·NumPag, Precio, PF·idTematica -> Tematica)
+Edita (PF·ISBN -> Libro, PF·dniTec -> Tecnico, P·fechaEnt, FechaSal)
+Tematica (P·ID, Tematica)
+
+Autor (P·dniAutor, PF·ISBN -> Libro)
+
+Tecnico (P·dniTec, Nombre, prApellido, N·sgApellido, Domicilio)

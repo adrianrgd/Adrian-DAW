@@ -1,0 +1,57 @@
+RESPUESTAS EJERCICIOS IDE - Adrián Rangel
+
+¿Has escuchado hablar de algo llamado “IDE”? ¿Qué imaginas que es?
+Pues es el entorno de desarrollo integrado, software que combina las herramientas para escribir y compilar codigo en una sola aplicacion.
+
+Relaciona cada componente del IDE con su descripción:
+1. Editor de codigo: Permite escribir, modificar y formatear el código fuente del programa.
+2. Depurador: Herramienta que detecta y corrige errores durante la ejecución del programa, permitiendo analizar el comportamiento del código paso a paso.
+3. Compilador: Se encarga de traducir el código fuente a un lenguaje que la computadora pueda ejecutar
+4. Explorador de Proyectos: Muestra la estructura y los archivos del proyecto, facilitando la navegación entre carpetas, clases y recursos.
+
+Busca IDE’s que podrias utilizar para programar en Java:
+- IntelliJ
+- Visual Studio Code
+- Eclipse
+
+¿Cuál fue uno de los primeros IDEs creados en los años 1980?
+Turbo Pascal
+
+¿Qué innovaciones trajeron IDEs como Visual Basic o Delphi en los años 1990?
+Trajo programacion visual e interfaces de usuario, un desarrollo más rápido de las aplicaciones y introdujo el editor de código, diseñador de 
+interfaz, compilador y depurador en una sola aplicación.
+
+¿Por qué Visual Studio Code se volvió tan popular en los años 2010? 
+Por su ligereza, rapidez, facilidad, su gran biblioteca de extensiones, su expansion multiplataforma, su integracion con git, el soporte para depuración 
+y autocompletado inteligente.
+
+¿Qué nuevas tecnologías (como la inteligencia artificial) se están incorporando en los IDEs 
+actuales?
+Github Copilot, Amazon CodeWhisperer, por ejemplo.
+
+Encuentra el IDE correspondiente a la descripcion y completa la tabla:
+Ligero y potente, con soporte para múltiples lenguajes mediante extensiones. Ideal para principiantes y profesionales. -> Visual Studio Code
+Popular en desarrollo Java, con gran capacidad de personalización. -> Eclipse
+Reconocido por su inteligencia y soporte avanzado para lenguajes modernos. -> IntelliJ IDEA
+Fácil de usar y recomendado para estudiantes que comienzan en Java. -> NetBeans
+Especializado en Python, con herramientas potentes para desarrollo y depuración. -> PyCharm
+Diseñado para crear aplicaciones en iOS y macOS. -> XCode
+
+¿Qué tecnología moderna permite que el IDE te ayude a escribir código automáticamente? 
+Github Copilot, Amazon CodeWhisperer, Tabnine, JetBrains AI Assistant
+
+¿Por qué es útil la colaboración en tiempo real? 
+Porque agiliza el proceso de escribir el codigo, y tambien la rapidez con la que lo terminas.
+
+¿Qué ventajas tiene trabajar con la nube desde un IDE?
+Permite acceder desde cualquier lugar tus proyectos, colaborar con un equipo, tener sincronizacion automatica del proyecto y poder compilar, probar o 
+ejecutar proyectos en servidores potentes sin depender del hardware de tu computadora.
+
+¿Qué característica no pertenece a un IDE?
+c) Reproductor de música
+
+¿Qué IDE es más usado para Python?
+b) PyCharm
+ 
+¿Cuál es la tendencia más moderna en los IDEs?
+b) Inteligencia Artificial

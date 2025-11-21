@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas de Contenido Multimedia</title>
+</head>
+<body>
+    <img src="multimedia/anchura.png" alt="anchura" width="400" height="200">
+    <picture>
+        <source media="(min-width: 1200px)" srcset="multimedia/imagen-xl.png">
+        <source media="(min-width: 768px)" srcset="multimedia/imagen-md.png">
+        <soruce media="(max-width: 767px)" srcset="multimedia/imagen-sm.png">
+        <img src="multimedia/imagen-default.png" alt="Descripcion de la imagen">
+    </picture>
+    <video controls autplay loop width="600" poster="multimedia/preview.png">
+        <source src="multimedia/video.mp4" type="=video/mp4">
+        <source src="multimedia/video.webm" type="video/webm">
+        <source src="multimedia/video.ogv" type="video/ogg">
+        Tu navegador no admite el elemento de video.
+    </video>
+    <div>
+        <h1>Reproductor de Video</h1>
+        <video autoplay loop muted width="400" poster="multimedia/preview.png">
+            <source src="multimedia/video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div>
+        <h1>Reproductor de Audio</h1>
+        <audio controls autoplay muted loop>
+            <source src="multimedia/audio.mp3" type="audio/mpeg">
+            <source src="multimedia/audio.ogg" type="audio/ogg">
+            Tu navegador no admite el elemento de audio.
+        </audio>
+    </div>
+    <div>
+        <h1>Mi Reproductor de Video con subtitulos</h1>
+        <video controls width="600">
+            <source src="multimedia/video.mp4" type="video/mp4">
+            <track kind="subtitles" srclang="es" src="multimedia/subtitulos_es.vtt" label="Español" default>
+            <track kind="captions" srclang="es" src="multimedia/subtitulos_en.vtt" label="Inglés">
+            Lo sentimos, tu navegador mo soporta videos incrustados.
+        </video>
+    </div>
+</body>
+</html>

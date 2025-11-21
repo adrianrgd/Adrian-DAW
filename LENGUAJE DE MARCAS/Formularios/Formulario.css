@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form {
+    padding-left: 25px;
+    border-radius: 15px;
+    background-color: #232325;
+    width: 450px;
+    height: 470px;
+}
+
+form h2 {
+    font-family: Rubik;
+    color: rgb(68, 141, 238);
+    font-size: 30px;
+}
+
+form h4 {
+    font-family: Arial;
+    color: white;
+    font-size: 17px;
+}
+
+form p {
+    font-family: sans-serif;
+    color: rgb(190, 190, 190);
+    font-size: 12px;
+}
+
+form label {
+    font-family: monospace;
+    font-size: 14px;
+    display: block;
+    color: white;
+    padding-inline: 2px;
+}
+
+form button {
+    color: white;
+    background-color: #004caf;
+    border-radius: 7px;
+    width: 90px;
+    height: 40px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: Rubik;
+}
+
+form input,
+form textarea {
+    display: block;
+    color: white;
+    background-color: #101011;
+    border-radius: 5px;
+    width: 400px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+form input {
+    height: 30px;
+}
+
+form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+
+form input:focus,
+form textarea:focus {
+    border: 1px solid rgb(68, 141, 238);
+}
+

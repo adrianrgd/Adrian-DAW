@@ -1,0 +1,120 @@
+/* 🎵 --- STYLES GÉNÉRAUX --- */
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #0d0d0f;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+a {
+  color: #d7b4ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #b57eff;
+}
+
+/* 🎧 --- ENCABEZADO --- */
+.encabezado {
+  background: linear-gradient(90deg, #1a1a1d, #2d1b3f);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 1px solid #3a3a3a;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+}
+
+.marca h1 {
+  font-size: 1.8em;
+  background: linear-gradient(90deg, #c77dff, #9d4edd);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin: 0;
+}
+
+/*  --- MENÚ --- */
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  color: #ffffff;
+  border-bottom: 2px solid #b57eff;
+  padding-bottom: 3px;
+}
+
+.contenedor {
+  display: flex;
+  flex: 1;
+  gap: 30px;
+  padding: 30px 50px;
+}
+
+.seccion {
+  flex: 3;
+  background-color: #1a1a1d;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 0 20px rgba(157, 78, 221, 0.1);
+}
+
+.playlist-contenedor {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(157, 78, 221, 0.2);
+  overflow: hidden;
+}
+
+.lista-playlist {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.pie {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #1a1a1d;
+  border-top: 1px solid #2d2d2d;
+  font-size: 0.9em;
+  color: #aaa;
+}

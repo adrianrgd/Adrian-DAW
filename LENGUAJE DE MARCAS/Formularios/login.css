@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(255, 247, 237);
+    font-family: Rubik;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
+
+form {
+    border: 3px #3c53b9 solid;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #ccd5ff;
+}
+
+form label {
+    display: block;
+    padding-inline: 15px;
+}
+
+form input {
+    display: block;
+    border: #3c53b9 solid 2px;
+    border-radius: 25px;
+    width: 200px;
+    height: 20px;
+    margin: 10px;
+    padding-inline: 15px;
+}
+
+form button {
+    display: inline;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 25px;
+    border: 2px #3c53b9 solid;
+    width: 100px;
+    height: 25px;
+    background-color: rgb(255, 255, 255);
+}

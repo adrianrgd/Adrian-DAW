@@ -1,0 +1,13 @@
+¿Por qué usamos <header> y no una simple <div> para el título y el menú?
+    Porque un <header> da informacion de forma más introductoria, como Indices, logos y titulos.
+
+¿Qué diferencia hay entre <section> y <article> en tu página? 
+    Un <section> se usa para agrupar contenido que se relaciona entre si en un espacio mayor y un <article> es contenido independiente como un blog.
+
+
+¿Qué contenido pusiste en el <aside> y por qué no lo metiste dentro del <main>?
+    Un <aside> se usa para informacion a parte de la principal, por eso añadi lo de "Siguenos en nuestras redes", apartandolo de la informacion esencial.
+
+¿Qué parte del documento podrías repetir en todas las páginas del sitio (por ejemplo, 
+“Noticias”, “Contacto”)? 
+La base del html:5 y el css .body y .menu de la pagina para que sean el mismo estilo.
