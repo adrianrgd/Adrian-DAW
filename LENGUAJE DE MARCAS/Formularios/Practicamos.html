@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Practicamos.css">
+</head>
+
+<body>
+    <form method="get" name="Encuesta">
+        <h2>QUIZ MULTIDEPORTIVO!!</h2>
+        <ol>
+            <li>
+                <label for="q1">¿Qué selecciones han ganado la Copa del Mundo?</label>
+                <input type="checkbox" name="q1" id="Brasil" value="Brasil">
+                <label for="Brasil">Brasil</label>
+                <input type="checkbox" name="q1" id="Francia" value="Francia">
+                <label for="Francia">Francia</label>
+                <input type="checkbox" name="q1" id="España" value="España">
+                <label for="España">España</label>
+                <input type="checkbox" name="q1" id="Holanda" value="Paises Bajos">
+                <label for="Holanda">Países Bajos</label>
+            </li>
+            <li>
+                <label for="q2">¿Quién es considerado una de las grandes leyendas de la NBA?</label>
+                <input type="radio" name="q2" id="Michael" value="Michael Jordan">
+                <label for="Michael">Michael Jordan</label>
+                <input type="radio" name="q2" id="Kobe" value="Kobe Bryant">
+                <label for="Kobe">Kobe Bryant</label>
+                <input type="radio" name="q2" id="LeBron" value="LeBron James">
+                <label for="LeBron">LeBron James</label>
+                <input type="radio" name="q2" id="Magic" value="Magic Johnson">
+                <label for="Magic">Magic Johnson</label>
+            </li>
+            <li>
+                <label for="tenis">Nombre del torneo internacional jugado sobre césped en Inglaterra:</label>
+                <input type="text" name="q3" id="tenis" minlength="1" maxlength="25" placeholder="Ej: Wimbledon">
+            </li>
+            <li>
+                <label for="jugadores">Escribe nombres de jugadores de la selección española:</label>
+                <textarea name="q4" id="jugadores" placeholder="Ej. Sergio Ramos, Morata, Casillas..."></textarea>
+            </li>
+            <li>
+                <label for="yearF1">¿En qué año crees que comenzó la Fórmula 1 moderna?</label>
+                <input type="number" id="yearF1" name="q5" step="1" min="1900" max="2025">
+            </li>
+            <li>
+                <label for="nivel">Nivel de fanatismo (0 = casual / 100 = ultra apasionado)</label>
+                <input type="range" name="q6" id="nivel" step="10" min="0" max="100">
+            </li>
+        </ol>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>

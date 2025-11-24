@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        details {
+            width: 350px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        details[open] {
+            box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        summary {
+            font-size: 20px;
+            font-weight: bold;
+            color: #4a00a8;
+            margin-bottom: 10px;
+            list-style: none;
+            cursor: pointer;
+        }
+
+        /* Quitamos el triangulito feo y ponemos uno personalizado */
+        summary::marker {
+            display: none;
+        }
+
+        summary::after {
+            content: "▼";
+            float: right;
+            transition: 0.3s;
+            font-size: 18px;
+            color: #4a00a8;
+        }
+
+        details[open] summary::after {
+            transform: rotate(-180deg);
+        }
+
+        h3 {
+            margin-top: 10px;
+            color: #222;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.4em;
+        }
+
+        img {
+            margin-top: 10px;
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <details>
+        <summary>Peliculon de la Semana!</summary>
+        <h3>Black Phone 2</h3>
+        <p>Una secuela que viene a recordar el trauma del pasado, descubriendo la verdad detras de El Captor.</p>
+        <img src="https://m.media-amazon.com/images/M/MV5BMTVjMzNmZGYtOWU5NS00NDYzLThhZTktZGNlODIwYWVhMDRmXkEyXkFqcGc@._V1_.jpg"
+            alt="Titulo" width="200px" height="300px">
+    </details>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script src="saludo.js"></script>
+</head>
+<body>
+    <script>
+        alert("¡Bienvenido a mi web!");
+        alert("UwU");
+    </script>
+    <h2>Holi, bienvenido a mi web!</h2>
+    <script type="module">
+        import { saludar } from './datos.js';
+        saludar();
+    </script>
+    <script nomodule>
+        console.log("En mis tiempos esto funcionaba mejor... 👨‍🦳")
+    </script>
+    <script type="module">
+        console.log("Soy un navegador moderno! 🗣️")
+    </script>
+    <script src="uno.js" async></script>
+    <script src="dos.js" defer></script>
+    <h2>Lista de alumnos</h2>
+    <table id="tabla">
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+        </tr>
+        <template id="alumno">
+            <tr>
+                <td>Pablo</td>
+                <td>22</td>
+            </tr>
+        </template>
+    </table>
+    <script>
+        const template = document.getElementById("alumno");
+        const tabla = document.getElementById("tabla");
+        const copia = template.content.cloneNode(true);
+        tabla.appendChild(copia);
+    </script>
+</body>
+</html>

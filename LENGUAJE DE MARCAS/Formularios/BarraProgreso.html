@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progreso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        form {
+            background-color: rgb(46, 42, 42);
+            padding: 20px 25px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: flex;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: white;
+        }
+
+        progress {
+            width: 300px;
+            height: 20px;
+            appearance: none;
+        }
+
+        input[type="button"] {
+            display: flex;
+            margin-top: 15px;
+            padding: 9px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="button"] :hover {
+            background-color: #022c58;
+        }
+
+        /* Estilo para navegadores WebKit */
+        progress::-webkit-progress-bar {
+            background-color: #eee;
+            border-radius: 5px;
+        }
+
+        progress::-webkit-progress-value {
+            background-color: #4caf50;
+            border-radius: 5px;
+        }
+
+        /* Estilo para Firefox */
+        progress::-moz-progress-bar {
+            background-color: #4caf50;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="get">
+        <label for="progreso">Progreso de la tarea:</label>
+        <progress type="text" id="progreso" max="100" value="60"></progress>
+        <input type="button" value="Confirmar">
+    </form>
+</body>
+
+</html>
