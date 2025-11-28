@@ -4,7 +4,7 @@ public class Array5 {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Como de grande la quieres??");
+        System.out.println("¿¿Como de grande sera el array??");
         int longitud = teclado.nextInt();
 
         double guardarNumeros[] = new double[longitud];
