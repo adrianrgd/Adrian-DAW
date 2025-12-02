@@ -1,0 +1,100 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Panel de Control — Hacker</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <main class="panel">
+      <header class="panel__header">
+        <h1>🔐 Panel de Control — Hacker</h1>
+        <p class="subtitle">
+            Actividad: eventos DOM — onload / focus / blur / mouseenter /
+            mouseleave / click / scroll
+        </p>
+      </header>
+
+      <section class="system">
+        <div class="system__left">
+          <figure class="core-wrap">
+            <!-- 1. Inicio del sistema — Evento load -->
+            <img
+              id="core"
+              src="image.png"
+              alt="Núcleo del sistema"
+              width="300"
+              height="300"
+            />
+            <figcaption
+              id="bootMsg"
+              class="msg boot-msg"
+              aria-live="polite"
+            ></figcaption>
+          </figure>
+
+          <!-- 2. Campo del código secreto — Eventos focus y blur -->
+          <div class="secret">
+            <label for="codigo">Código secreto</label>
+            <input
+              id="codigo"
+              class="input--mono"
+              type="text"
+              placeholder="Introduce el código secreto"
+              autocomplete="off"
+            />
+            <p id="focusMsg" class="msg focus-msg" aria-live="polite"></p>
+
+            <!-- Zone pour le message spécial "Acceso autorizado" et l'image top-secret (défi) -->
+            <p id="accessMsg" class="msg access-msg" aria-live="polite"></p>
+            <img
+              id="topSecret"
+              class="top-secret"
+              src=""
+              alt="Top secret"
+              hidden
+            />
+          </div>
+
+          <!-- 3. Botón sensible al ratón — mouseenter / mouseleave -->
+          <!-- 4. Acción al hacer clic — Evento click -->
+          <div class="actions">
+            <button id="hackBtn" onmouseenter="entrarBoton()" class="btn hack">HACK</button>
+            <button id="sparkBtn" onmouseleave="salirBoton()" class="btn spark">Spark (Effet)</button>
+          </div>
+        </div>
+
+        <div class="system__right">
+          <!-- 5. Zona de logs — Evento scroll -->
+          <label for="logs" class="logs-label">Logs del sistema</label>
+          <div
+            id="logs"
+            class="logs"
+            tabindex="0"
+            aria-label="Zone de logs, scrollable"
+          >
+            <div class="logline">[LOG] Sistema iniciado...</div>
+            <div class="logline">[LOG] Chequeo de firewalls...</div>
+            <div class="logline">[LOG] Sensores OK</div>
+            <div class="logline">[LOG] Interfaces listas</div>
+            <div class="logline">[LOG] Esperando comandos...</div>
+            <div class="logline">Más texto para poder hacer scroll...</div>
+            <div class="logline">
+              ..................................................................
+            </div>
+            <div class="logline">Fin de los logs.</div>
+          </div>
+          <p id="scrollMsg" class="msg scroll-msg" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <footer class="panel__footer">
+      </footer>
+    </main>
+
+    <!-- Script javascript-->
+    <script src="app.js"></script>
+  </body>
+</html>

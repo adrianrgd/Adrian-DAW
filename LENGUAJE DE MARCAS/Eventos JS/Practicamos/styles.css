@@ -1,0 +1,162 @@
+/* styles.css */
+:root{
+    --bg: #0b0f12;
+    --panel: #071014;
+    --accent: #39ff14; /* vert hacker */
+    --muted: #9aa7a6;
+    --glass: rgba(255,255,255,0.03);
+    --danger: #ff3b3b;
+    --radius: 12px;
+    --mono: 'Courier New', Courier, monospace;
+  }
+  
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family: Inter, system-ui, -apple-system, Roboto, "Helvetica Neue", Arial;
+    background: linear-gradient(180deg, #020305 0%, #081016 100%);
+    color: var(--muted);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    padding:100px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-center;
+  }
+  
+  /* Panel container */
+  .panel{
+    width:100%;
+    max-width:1100px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+
+    border-radius:16px;
+    padding:18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    border:1px solid rgba(255,255,255,0.02);
+  }
+  
+  /* Header */
+  .panel__header{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    margin-bottom:12px;
+  }
+  .panel__header h1{
+    margin:0;
+    color:var(--accent);
+    font-family: var(--mono);
+    font-size:20px;
+    letter-spacing:1px;
+  }
+  .subtitle{ margin:0; font-size:13px; color:#6f8a85; }
+  
+  /* Layout */
+  .system{
+    display:grid;
+    grid-template-columns: 1fr 380px;
+    gap:18px;
+    align-items:start;
+  }
+  
+  /* Left column */
+  .system__left{ display:flex; flex-direction:column; gap:14px; }
+  
+  .core-wrap{
+    background:var(--glass);
+    padding:10px;
+    border-radius:10px;
+    display:inline-block;
+    width:max-content;
+  }
+  .core-wrap img{
+    display:block;
+    border-radius:8px;
+    border:1px solid rgba(255,255,255,0.03);
+    box-shadow: inset 0 -6px 24px rgba(0,0,0,0.6);
+    object-fit: cover;
+
+  }
+  
+  /* Messages */
+  .msg{
+    margin:8px 0 0 0;
+    font-family: var(--mono);
+    font-size:13px;
+    color:var(--muted);
+  }
+  .boot-msg{ color:var(--accent); font-weight:700; }
+  
+  /* Secret area */
+  .secret{ background: rgba(255,255,255,0.02); padding:12px; border-radius:10px; }
+  .secret label{ display:block; font-size:12px; color:#7f9b97; margin-bottom:6px; }
+  .input--mono{
+    font-family: var(--mono);
+    padding:8px 10px;
+    border-radius:8px;
+    border:1px solid rgba(255,255,255,0.03);
+    background:transparent;
+    color:var(--muted);
+    width:260px;
+  }
+  .top-secret{ width:180px; margin-top:10px; border-radius:8px; border:1px solid rgba(255,255,255,0.03); }
+  
+  /* Buttons */
+  .actions{ display:flex; gap:10px; margin-top:8px; }
+  .btn{
+    font-family: var(--mono);
+    padding:10px 16px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,0.04);
+    background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
+    cursor:pointer;
+    color:var(--muted);
+    transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s;
+  }
+  .btn:active{ transform: translateY(1px); }
+  .hack{ font-weight:700; letter-spacing:1px; }
+  .spark{ font-weight:600; }
+  
+  /* Right column (logs) */
+  .system__right{ display:flex; flex-direction:column; gap:10px; }
+  .logs-label{ font-size:12px; color:#6a8b86; }
+  .logs{
+    background: #061018;
+    border-radius:10px;
+    padding:10px;
+    height:210px;
+    overflow-y:auto;
+    border:1px solid rgba(255,255,255,0.02);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.5) inset;
+    font-family: var(--mono);
+    font-size:13px;
+    color:#cfeee0;
+  }
+  .logline{ margin-bottom:8px; opacity:0.95; }
+  
+  /* Footer */
+  .panel__footer{ margin-top:12px; color:#5f8a80; font-size:12px; }
+  
+  /* Focus visuals (pour que les élèves voient les changements quand ils manipulent le DOM) */
+  .access-msg{ color: var(--accent); font-weight:700; margin-top:6px; }
+  .scroll-msg{ color:#d1ccb4; font-weight:700; }
+  
+  /* Petite animation quand on clique sur sparkBtn (les élèves peuvent activer via JS en ajoutant/removing class) */
+  .spark-effect {
+    animation: spark 700ms ease-out;
+  }
+  @keyframes spark {
+    0% { box-shadow: 0 0 0 0 rgba(57,255,20,0.7); transform:scale(1);}
+    60% { box-shadow: 0 0 40px 10px rgba(57,255,20,0.05); transform:scale(1.02); }
+    100% { box-shadow: none; transform:scale(1); }
+  }
+  
+  /* Responsive */
+  @media (max-width:980px){
+    .system{ grid-template-columns: 1fr; }
+    .top-secret{ width:140px; }
+    .input--mono{ width:100%; }
+  }
+  

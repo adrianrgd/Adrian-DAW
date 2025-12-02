@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img id="gandalf" src="gandalf.jpg" alt="gandalf" style="opacity: 100%;" onclick="mostrar()"/>
+        <script>
+            function mostrar() {
+                document.getElementById("gandalf").style.opacity = "40%";
+            }
+        </script>
+    </div>
+
+    <img src="images.jpg" id="imageExample" alt="Image">
+    <p id="status"></p>
+    <script>
+        document.getElementById("imageExample").addEventListener("load", function () {
+            document.getElementById("status").innerText = "Imagen cargada correctamente.";
+        });
+    </script>
+
+    <textarea id="textArea" style="width: 100%; height: 100px;">
+        Este es un ejemplo de texto donde puedes hacer scroll para probar el evento.
+    </textarea>
+    <p id="scrollStatus"></p>
+    <script>
+        document.getElementById("textArea").addEventListener("scroll", function () {
+            document.getElementById("scrollStatus").innerText = "Scroll detectado.";
+        });
+    </script>
+
+    <div>
+        <input type="text" onblur="alert('¡Has perdido el foco!')">
+        <input type="text" onfocus="alert('¡Estoy en foco!')">
+    </div>
+
+    <p id="exampleText" onclick="changeColor()" ondblclick="amai()">Haz click para cambiar el color del texto!</p>
+    <p id="exampleText2" onmouseenter="changeColor2()">Pasa el mouse para cambiar el color del texto!</p>
+    <script>
+        function changeColor() {
+            document.getElementById("exampleText").style.color = "blue";
+        }
+        function changeColor2() {
+            document.getElementById("exampleText2").style.color = "green";
+        }
+        function amai() {
+            document.getElementById("exampleText").style.fontFamily = "Rubik"
+        }
+    </script>
+</body>
+</html>
