@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Array8 {
     public static void main(String[] args) {
         int longitud = 10;
@@ -14,8 +16,13 @@ public class Array8 {
             array[i] = resultado;
         }
 
-        System.out.println("=== Números guardados en el Array ===");
+        sort(array);
+    }
+
+    public static void sort(int array[]) {
+                System.out.println("=== Números guardados en el Array ===");
         for (int i = 0; i < array.length; i++) {
+            Arrays.sort(array);
             System.out.println("Posición [" + i + "]: " + array[i]);
         }
     }
