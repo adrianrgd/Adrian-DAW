@@ -8,10 +8,9 @@ public class Array6 {
 
         for (int i = 0; i < longitud; i++) {
             Scanner teclado = new Scanner(System.in);
-            System.out.print("Introduce el numero " + (i + 1) + ": ");
+            System.out.print("Introduce un numero " + (i + 1) + ": ");
             int num = teclado.nextInt();
             guardarNumeros[i] = num;
-            teclado.close();
             
         }
 
