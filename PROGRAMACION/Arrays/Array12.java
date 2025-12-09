@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class Array12 {
     public static void main(String[] args) {
@@ -12,7 +11,7 @@ public class Array12 {
             entradaUsuario = teclado.nextLine();
             
             if (entradaUsuario.equalsIgnoreCase("salir")) {
-                System.out.println("\n¡Hasta luego!");
+                System.out.println("¡Hasta luego!");
                 break;
             }
 
@@ -35,9 +34,9 @@ public class Array12 {
             }
             
             System.err.println("=======================");
-            
+
             if (contador > 0) {
-                System.out.println("Ciudad encontrada!");
+                System.out.println("¡Ciudad encontrada!");
                 System.out.println("Veces que aparece: " + contador);
                 System.out.println("Primera posición: " + primeraPosicion);
                 System.out.println("Última posición: " + ultimaPosicion);
