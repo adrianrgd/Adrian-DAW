@@ -15,13 +15,14 @@ public class Switch2 {
             System.out.println("Introduce la calificacion: ");
             String Nota = teclado.nextLine();
             
-            switch (Nota) {
-                case "A" -> System.out.println("Sobresaliente");
-                case "B" -> System.out.println("Notable");
-                case "C" -> System.out.println("Bien");
-                case "D" -> System.out.println("Suficiente");
-                case "F" -> System.out.println("Suspendido");
-            }
+            String resultado = switch (Nota) {
+                case "A" -> "Sobresaliente";
+                case "B" -> "Notable";
+                case "C" -> "Bien";
+                case "D" -> "Suficiente";
+                case "F" -> "Suspendido";
+                default -> "Calificacion invalida";
+            };
         }
     }
 }

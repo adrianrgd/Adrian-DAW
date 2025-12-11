@@ -23,6 +23,7 @@ public class Switch4 {
             case "+":
                 double suma = num1 + num2;
                 System.out.println("La suma da: " + suma);
+                
                 break;
             case "-":
                 double resta = num1 - num2;

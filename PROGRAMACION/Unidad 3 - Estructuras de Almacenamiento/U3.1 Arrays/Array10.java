@@ -24,12 +24,15 @@ public class Array10 {
         String meses[] = { "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre",
         "Octubre", "Noviembre", "Diciembre" };
         arrayDias(mes, dias, meses);
+        meses[0] = "hola";
     }
 
-    public static void arrayDias(int mes, int dias[], String meses[]) {
+    public static String arrayDias(int mes, int dias[], String meses[]) {
         for (int i = 0; i < 12; i++) {
             i = dias[mes];
         }
+        String resultado = "Hola";
         System.out.println("El mes " + (mes + 1) + ", que es " + meses[mes] + " tiene " + dias[mes] + " dias.");
+        return resultado;
     }
 }

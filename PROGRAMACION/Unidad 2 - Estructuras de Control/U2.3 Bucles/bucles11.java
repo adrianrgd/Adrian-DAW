@@ -9,11 +9,11 @@ public class bucles11 {
         Scanner teclado = new Scanner(System.in);
         String palabra = "";
 
-        while (palabra != "fin") {
+        while (!palabra.equals("fin")) {
             System.out.println("Introdue una palabra en minuscula ('fin' para terminar el programa): ");
             palabra = teclado.nextLine();
             System.out.println("Palabra en mayusculas: " + palabra.toUpperCase());
-            if (palabra == "fin") {
+            if (palabra.equals("fin")) {
                 System.out.println("Programa terminado.");
             }
         }

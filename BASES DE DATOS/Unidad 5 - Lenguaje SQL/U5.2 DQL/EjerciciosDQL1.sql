@@ -25,7 +25,7 @@ ORDER BY poblacioncine;
 
 5.
 SELECT poblacioncine 
-FROM cine 
+FROM cine
 WHERE nombrecine LIKE '%a' 
 ORDER BY poblacioncine DESC;
 
@@ -49,8 +49,8 @@ LIMIT 2;
 9.
 SELECT poblacioncine, nombrecine, idcine
 FROM cine
-WHERE idcine < 30 (AND poblacioncine = 'Sagunto' OR nombrecine) LIKE '%ca%'
-ORDER BY poblacioncine, nombrecine ASC; 
+WHERE idcine > 30 AND (poblacioncine = 'Sagunto' OR nombrecine LIKE '%ca%')
+ORDER BY poblacioncine, nombrecine ASC;
 
 10.
 SELECT COUNT(nombrecine)
@@ -80,7 +80,7 @@ LIMIT 8;
 14.
 SELECT nombrecine, poblacioncine
 FROM cine
-WHERE nombrecine LIKE '%ABC%' AND poblacioncine = 'Gandia';
+WHERE nombrecine LIKE '%ABC%' OR poblacioncine = 'Gandia';
 
 15.
 SELECT COUNT(*)
