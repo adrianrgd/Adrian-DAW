@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productos>
+    <producto id="101">
+        <nombre>Televisor</nombre>
+        <precio>450</precio>
+        <categoria>Electronica</categoria>
+    </producto>
+    <producto id="102">
+        <nombre>Lavadora</nombre>
+        <precio>300</precio>
+        <categoria>Electrodomesticos</categoria>
+    </producto>
+    <producto id="103">
+        <nombre>Estanteria</nombre>
+        <precio>110</precio>
+        <categoria>Hogar</categoria>
+    </producto>
+</productos>

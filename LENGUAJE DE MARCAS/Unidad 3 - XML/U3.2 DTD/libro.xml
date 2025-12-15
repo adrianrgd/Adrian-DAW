@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libro SYSTEM "libro.dtd">
+<libro>
+    <titulo>Programacion en XML</titulo>
+    <autor>Maria Perez</autor>
+    <descripcion>Aprende programacion XML con este libro.</descripcion>
+</libro>

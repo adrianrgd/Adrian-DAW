@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- El curso es opcional -->
+<usuario>
+    <nombre>Laura</nombre>
+    <edad>22</edad>
+</usuario>

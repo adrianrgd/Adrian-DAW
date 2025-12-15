@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libro SYSTEM "libro.dtd">
+<libro>
+    <titulo>Programacion en XML</titulo>
+    <autor>Maria Perez</autor>
+    <capitulos>
+        <capitulo numero="1">Introduccion</capitulo>
+        <capitulo numero="2">Sintaxis</capitulo>
+    </capitulos>
+</libro>
