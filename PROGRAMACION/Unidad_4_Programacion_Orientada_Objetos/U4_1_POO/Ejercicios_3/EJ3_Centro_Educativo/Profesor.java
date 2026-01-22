@@ -1,9 +1,9 @@
-public class Profesores {
-    private String nombre;
-    private String especialidad;
+public class Profesor {
+    public String nombre;
+    public String especialidad;
     private int numCursosAsignados;
 
-    public Profesores(String nombre, String especialidad, int numCursosAsignados) {
+    public Profesor(String nombre, String especialidad, int numCursosAsignados) {
         this.nombre = nombre;
         this.especialidad = especialidad;
         this.numCursosAsignados = numCursosAsignados;
@@ -19,9 +19,14 @@ public class Profesores {
         System.out.println("NumCursosAsignados: " + this.numCursosAsignados);
     }
 
-    @Override
-    public String toString() {
-        return "Profesores [nombre=" + nombre + ", especialidad=" + especialidad + ", numCursosAsignados=" + numCursosAsignados + "]";
+    public void anotarCurso() {
+        this.numCursosAsignados++;
+    }
+
+    public void mostrarInformacionProfesor() {  
+        System.out.println("Profesor: " + nombre);
+        System.out.println("Especialidad: " + especialidad);
+        System.out.println("Cursos asignados: " + numCursosAsignados);
     }
 }
 

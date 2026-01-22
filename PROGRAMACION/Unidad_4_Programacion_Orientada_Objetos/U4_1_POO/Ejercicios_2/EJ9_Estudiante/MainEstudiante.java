@@ -1,4 +1,4 @@
-//Ejercicio 9 POO_2
+package EJ9_Estudiante;
 
 class Estudiante {
     String nombre;
@@ -17,12 +17,5 @@ class Estudiante {
         double promedio = (nota1 + nota2 + nota3) / 3;
         System.out.println("Nombre del estudiante: " + nombre);
         System.out.println("Promedio de las notas: " + promedio);
-    }
-}
-
-public class MainEstudiante {
-    public static void main(String[] args) {
-        Estudiante estudiante1 = new Estudiante("Francisco", 7.1, 4.5, 5);
-        estudiante1.calcPromedio();
     }
 }
