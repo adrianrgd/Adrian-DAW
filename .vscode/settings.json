@@ -6,7 +6,7 @@
     },
     {
       "folderPath": "Adrián DAW\\BASES DE DATOS\\",
-      "color": "foldercolorizer.color_cc6666"
+      "color": "foldercolorizer.color_ff9933"
     },
     {
       "folderPath": "Adrián DAW\\ENTORNOS DE DESAROLLO\\",
@@ -24,5 +24,6 @@
       "folderPath": "Adrián DAW\\PROGRAMACION\\",
       "color": "foldercolorizer.color_00cc99"
     }
-  ]
+  ],
+  "git.ignoreLimitWarning": true
 }

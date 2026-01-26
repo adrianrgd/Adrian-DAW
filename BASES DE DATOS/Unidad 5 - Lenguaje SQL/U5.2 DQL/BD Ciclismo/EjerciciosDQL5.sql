@@ -63,9 +63,11 @@ WHERE NOT EXISTS (SELECT 1 FROM puerto p2 WHERE altura < 700 AND p1.netapa = p2.
 10. "Obtener el nombre y el director de los equipos tales que todos sus ciclistas son
 mayores de 26 años."
 
-SELECT nomeq, director
-FROM equipo
-WHERE EXISTS (SELECT edad FROM ciclista WHERE edad > 26);
+SELECT nomeq, director 
+FROM equipo e 
+WHERE NOT EXISTS (SELECT * FROM ciclista c 
+WHERE c.nomeq = e.nomeq 
+AND c.edad <= 26);
 
 11. "Obtener el dorsal y el nombre de los ciclistas tales que todas las etapas que han
 ganado tienen más de 170 km (es decir que sólo han ganado etapas de más de
@@ -89,7 +91,15 @@ AND p.dorsal <> c.dorsal);
 13. "Obtener el nombre de los equipos tales que todos sus corredores han llevado
 algún maillot o han ganado algún puerto."
 
-
+SELECT DISTINCT nomeq
+FROM equipo e
+WHERE NOT EXISTS (SELECT * FROM ciclista c WHERE c.nomeq = e.nomeq
+AND c.dorsal NOT IN (SELECT dorsal FROM llevar)
+AND c.dorsal NOT IN (SELECT dorsal FROM puerto));
 
 14. "Obtener el código y el color de aquellos maillots que sólo han sido llevados por
 ciclistas de un mismo equipo."
+
+SELECT l.codigo, m.color
+FROM llevar l, maillot m
+

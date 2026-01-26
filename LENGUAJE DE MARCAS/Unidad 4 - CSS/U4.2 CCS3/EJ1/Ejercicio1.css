@@ -1,0 +1,122 @@
+body {
+  background-color: rgb(6, 110, 96);
+  color: white;
+  font-family: "Departure Mono", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(19, 75, 160);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#contenedor {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px 0px 20px 20px;
+  border: 2px solid white;
+  background-color: rgb(19, 75, 160);
+  padding: 20px;
+  margin-top: 30px;
+  margin-inline: auto;
+  width: 30%;
+  height: 30%;
+  animation: contenedor 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes contenedor {
+  from {
+    box-shadow: 0px 0px 0px black;
+  }
+  to {
+    box-shadow: 10px 10px 0px black;
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
+.texto {
+  text-align: center;
+  font-style: italic;
+  animation: texto 5s infinite;
+}
+
+input[type="text"] {
+  border: 1px solid black;
+  color: black;
+  padding: 6px;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+#saludar {
+  background-color: white;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 5px;
+  border: none;
+  color: black;
+  font-family: Arial;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+}
+
+#cambiarColor {
+  background-color: white;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 5px;
+  border: none;
+  color: black;
+  font-family: Arial;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  box-shadow: 5px 5px 0px black;
+  cursor: pointer;
+}
+
+#resultado {
+  font-size: 20px;
+  text-align: center;
+}
+
+@keyframes texto {
+  0% {
+    color: white;
+  }
+  30% {
+    color: rgb(68, 255, 130);
+  }
+  60% {
+    color: rgb(255, 253, 117);
+  }
+  100% {
+    color: white;
+  }
+}
+
+@media (max-width: 800px) {
+  #contenedor {
+    width: 70%;
+    height: 70%;
+  }
+}
