@@ -73,20 +73,65 @@ SELECT * FROM JefesDepartamento;
 6. "Asignaturas que imparte actualmente (en el último curso) cada profesor (dni,
 nombre y apellidos del profesor, nombre asignatura)"
 
+CREATE VIEW AsignaturasImparteActual AS
+SELECT p.dni, p.nombre, p.prapellido, p.sgapellido, a.nombre AS nombreAsignatura
+FROM profesor p
+INNER JOIN imparte i
+ON p.dni = i.dni
+INNER JOIN asignatura a
+ON i.codasig = a.codasig
+WHERE i.curso = (SELECT MAX(curso) FROM imparte WHERE dni = p.dni);
 
+SELECT * FROM AsignaturasImparteActual;
 
 7. "Asignaturas por departamento (departamento, nombre del profesor, curso en el
 que imparte, asignatura)"
 
+CREATE VIEW AsignaturasPorDepartamento AS
+SELECT d.nombre AS NombreDepartamento, p.nombre AS NombreProfesor, i.curso, aa.nombre AS nombreAsignatura
+FROM departamento d
+INNER JOIN profesor p
+ON p.coddep = d.coddep
+INNER JOIN imparte i
+ON p.dni = i.dni
+INNER JOIN asignatura aa
+ON i.codasig = aa.codasig
+ORDER BY d.nombre;
 
+SELECT * FROM AsignaturasPorDepartamento;
 
 8. "Alumnos sin matrícula en el curso actual (dni, nombre, apellidos)"
 
+CREATE VIEW AlumnosSinMatricula AS
+SELECT a.dni, a.nombre, a.prapellido, a.sgapellido, m.curso
+FROM alumno a
+LEFT JOIN matricula m
+ON a.dni = m.dni
+AND m.curso = (SELECT MAX(curso) FROM matricula)
+WHERE m.curso IS NULL;
 
+SELECT * FROM AlumnosSinMatricula;
 
 9. "Profesores que no imparten asignaturas (dni, nombre, apellidos)"
 
-
+SELECT p.dni, p.nombre, p.prapellido, p.sgapellido
+FROM profesor p
+LEFT JOIN imparte i
+ON p.dni = i.dni
+WHERE i.codasig IS NULL;
 
 10. "Media de las notas obtenidas por ciclo ( ciclo, asignatura, curso matrícula, nota
 media)"
+
+CREATE VIEW MediaNotasPorCiclo AS
+SELECT AVG(l.nota), c.nombre AS nombreCiclo, aa.nombre AS nombreAsignatura, m.curso
+FROM matricula m
+INNER JOIN lineamatricula l
+ON m.codmatr = l.codmatr
+INNER JOIN asignatura aa
+ON l.codasig = aa.codasig
+INNER JOIN ciclo c
+ON aa.codcf = c.codcf
+GROUP BY c.nombre, aa.nombre, m.curso;
+
+SELECT * FROM MediaNotasPorCiclo;   
