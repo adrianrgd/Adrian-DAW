@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.5/css/all.min.css"
+      integrity="sha512-v2CJ7UaYx7Phn9YO9SmJVMPrIEw6WlJrgEjYlwxssGFpnseRu8hg3evNm6/lyo6yPIt1aqZZr1RWDI98cglybQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo">Ejercicio 3</h1>
+    </header>
+    <div id="contenedor">
+      <h1>Interacciones con JS</h1>
+      <section class="seccion1">
+        <h2>Contador de caracteres:</h2>
+        <input type="text" id="texto" placeholder="Escribe algo..." data-="" />
+        <p id="contador">
+          Has escrito
+          <span style="color: rgb(164, 255, 164)"> 0</span> caracteres.
+        </p>
+      </section>
+
+      <hr />
+
+      <section class="seccion2">
+        <h2>Mostrar u ocultar mensaje:</h2>
+        <button id="mostrarMensaje">Mostrar mensaje</button>
+        <p id="mensaje">Torrente Presidente, 23 de febrero en cines!</p>
+      </section>
+
+      <hr />
+
+      <section class="seccion3">
+        <h2>Cambiar color de fondo:</h2>
+        <button id="cambiarColor">Cambiar color</button>
+        <p id="colorInfo">Color actual: Verde Pino</p>
+      </section>
+
+      <hr />
+
+      <section class="seccion4">
+        <h2>Contador numerico:</h2>
+        <div id="contadorNumerico">
+          <button id="menos">-</button>
+          <span id="numero">0</span>
+          <button id="mas">+</button>
+        </div>
+        <p id="numeroInfo">Pulsa los botones para cambiar el numero!</p>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
