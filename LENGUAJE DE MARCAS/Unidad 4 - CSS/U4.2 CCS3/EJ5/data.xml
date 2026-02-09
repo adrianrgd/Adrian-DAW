@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<productos>
+    <producto>
+        <nombre>Naranja</nombre>
+        <precio>1.20</precio>
+    </producto>
+    
+    <producto>
+        <nombre>Manzana</nombre>
+        <precio>1.50</precio>
+    </producto>
+
+    <producto>
+        <nombre>Pera</nombre>
+        <precio>1.30</precio>
+    </producto>
+
+    <producto>
+        <nombre>Uva</nombre>
+        <precio>2.00</precio>
+    </producto>
+
+    <producto>
+        <nombre>Plátano</nombre>
+        <precio>0.80</precio>
+    </producto>
+</productos>

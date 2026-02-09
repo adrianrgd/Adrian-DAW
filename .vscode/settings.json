@@ -25,5 +25,10 @@
       "color": "foldercolorizer.color_00cc99"
     }
   ],
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "java.project.sourcePaths": [
+    "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Animales",
+    "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/Ejercicios_2/EJ9_Estudiante",
+    "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Vehiculos"
+  ]
 }

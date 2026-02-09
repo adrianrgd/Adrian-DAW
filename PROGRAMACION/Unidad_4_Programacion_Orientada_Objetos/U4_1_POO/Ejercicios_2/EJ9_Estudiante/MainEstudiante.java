@@ -1,5 +1,3 @@
-package EJ9_Estudiante;
-
 class Estudiante {
     String nombre;
     double nota1;
