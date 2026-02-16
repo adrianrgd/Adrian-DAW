@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo">Actividad 1</h1>
+    </header>
+    <div id="contenedor">
+      <h1>Rellena los campos.</h1>
+      <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Escribe tu nombre" />
+        <label for="numero">Número:</label>
+        <input type="number" id="numero" placeholder="Escribe un número" />
+        <button id="guardar" type="button">Guardar</button>
+      </form>
+    </div>
+    <div id="modal" class="modal">
+      <div id="modal-content">
+        <p id="infoNombre"></p>
+        <p id="infoNumero"></p>
+        <hr style="border: 1px solid white" />
+        <p id="parImpar"></p>
+        <p id="primo"></p>
+        <p id="cuadrado"></p>
+        <button id="cerrarModal">Cerrar</button>
+      </div>
+    </div>
+    <div id="resultados-anteriores">
+      <h2>Resultados anteriores</h2>
+      <div id="info-resultados-anteriores">
+        <p id="lista-labels">
+          <span>Nombre</span>
+          <span>Número</span>
+          <span>Par/Impar</span>
+          <span>Primo</span>
+          <span>Cuadrado</span>
+        </p>
+        <p id="no-hay-nada">No hay nada</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
