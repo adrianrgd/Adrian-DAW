@@ -1,0 +1,10 @@
+1,Zona A - Parcela 1,6
+2,Zona A - Parcela 2,6
+3,Zona B - Bungalow 1,4
+4,Zona B - Bungalow 2,4
+5,Zona C - Parcela 3,8
+6,Zona C - Parcela 4,8
+7,Zona D - Bungalow 3,5
+8,Zona D - Bungalow 4,5
+9,Zona E - Parcela 5,10
+10,Zona E - Parcela 6,10

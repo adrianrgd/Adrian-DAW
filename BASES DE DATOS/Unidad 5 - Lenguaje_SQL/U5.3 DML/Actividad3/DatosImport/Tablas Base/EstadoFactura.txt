@@ -1,0 +1,5 @@
+1,Pendiente
+2,Pagada
+3,Anulada
+4,Reclamada
+5,Devuelta

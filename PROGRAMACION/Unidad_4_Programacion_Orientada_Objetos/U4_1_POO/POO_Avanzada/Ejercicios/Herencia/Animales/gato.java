@@ -20,6 +20,6 @@ public class gato extends animal {
 
     @Override
     public String toString() {
-        return "Gato -> Nombre: " + nombre + " | Peso: " + peso + " | Edad: " + edad;
+        return "Nombre: " + nombre + " | Peso: " + peso + " | Edad: " + edad;
     }
 }

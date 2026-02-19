@@ -1,0 +1,5 @@
+1,Confirmada
+2,Pendiente de pago
+3,Cancelada
+4,Check-in realizado
+5,Check-out realizado
