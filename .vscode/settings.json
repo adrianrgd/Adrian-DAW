@@ -27,15 +27,15 @@
   ],
   "git.ignoreLimitWarning": true,
   "java.project.sourcePaths": [
-    "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Vehiculos",
+    "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios_2/GestionPresupuestos",
     "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Universidad",
-    "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Animales",
+    "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Composicion/Ordenador",
+    "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Composicion/Coche",
     "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Biblioteca",
-    "PROGRAMACION\\Unidad_4_Programacion_Orientada_Objetos\\U4_1_POO\\POO_Avanzada\\Ejercicios\\Agregacion\\Biblioteca",
-    "PROGRAMACION\\Unidad_4_Programacion_Orientada_Objetos\\U4_1_POO\\POO_Avanzada\\Ejercicios\\Agregacion\\Universidad",
-    "PROGRAMACION\\Unidad_4_Programacion_Orientada_Objetos\\U4_1_POO\\POO_Avanzada\\Ejercicios\\Composicion\\Coche",
-    "PROGRAMACION\\Unidad_4_Programacion_Orientada_Objetos\\U4_1_POO\\POO_Avanzada\\Ejercicios\\Composicion\\Ordenador",
-    "PROGRAMACION\\Unidad_4_Programacion_Orientada_Objetos\\U4_1_POO\\POO_Avanzada\\Ejercicios_2\\GestionPresupuestos"
+    "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Agregacion/Universidad",
+    "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Agregacion/Biblioteca",
+    "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Actividad_TiendaOnline",
+    "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios_2/GestionarSuscripciones"
   ],
   "java.project.referencedLibraries": [],
   "editor.inlineSuggest.edits.allowCodeShifting": "horizontal",

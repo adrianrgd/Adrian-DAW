@@ -1,6 +1,0 @@
-idtarifa, tipo, importebase, impuesto, descuento, codtemporada
-1,Temporada Baja,100,10,0,1
-2,Temporada Media,120,10,0,2
-3,Temporada Alta,150,10,0,3
-4,Temporada Baja,180,10,0,4
-5,Temporada Baja,180,10,0,5

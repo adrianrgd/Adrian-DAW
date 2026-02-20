@@ -1,14 +1,19 @@
-public class Electronica extends Producto{
-    int garantia;
-    String marca;
-    int consumoEnergetico;
+package productos;
 
-    public Electronica(String id, String nombre, double precio, int stock, boolean estado, String proveedor, int garantia, String marca, int consumoEnergetico) {
-        super(id, nombre, precio, stock, estado, proveedor);
-        this.garantia = garantia;
+public class Electronica extends Producto {
+    private int garantiaMeses;
+    private String marca;
+    private double consumoElectrico;
+
+    public Electronica(String id, String nombre, double precio, int stock, String proveedor, int garantiaMeses,
+            String marca) {
+        super(id, nombre, precio, stock, proveedor);
+        this.garantiaMeses = garantiaMeses;
         this.marca = marca;
-        this.consumoEnergetico = consumoEnergetico;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return super.toString() + " [Electrónica: " + marca + ", Garantía: " + garantiaMeses + "m]";
+    }
 }
