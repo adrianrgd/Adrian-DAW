@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<videojuegos>
+    <videojuego>
+        <titulo id='1'>Minecraft</titulo>
+        <estudio>Mojang</estudio>
+        <lanzamiento>2011</lanzamiento>
+        <genero>Sandbox</genero>
+        <plataforma>Multiplataforma</plataforma>
+        <precio>29.90</precio>
+    </videojuego>
+    <videojuego>
+        <titulo id='2'>Grand Theft Auto V</titulo>
+        <estudio>Rockstar Games</estudio>
+        <lanzamiento>2013</lanzamiento>
+        <genero>Acción</genero>
+        <plataforma>Multiplataforma</plataforma>
+        <precio>19.99</precio>
+    </videojuego>
+    <videojuego>
+        <titulo id='3'>The Witcher 3: Wild Hunt</titulo>
+        <estudio>CD Projekt Red</estudio>
+        <lanzamiento>2015</lanzamiento>
+        <genero>RPG</genero>
+        <plataforma>Multiplataforma</plataforma>
+        <precio>29.99</precio>
+    </videojuego>
+    <videojuego>
+        <titulo id='4'>The Legend of Zelda: Breath of the Wild</titulo>
+        <estudio>Nintendo</estudio>
+        <lanzamiento>2017</lanzamiento>
+        <genero>Acción-Aventura</genero>
+        <plataforma>Nintendo Switch</plataforma>
+        <precio>59.99</precio>
+    </videojuego>
+    <videojuego>
+        <titulo id='5'>Red Dead Redemption 2</titulo>
+        <estudio>Rockstar Games</estudio>
+        <lanzamiento>2018</lanzamiento>
+        <genero>Acción-Aventura</genero>
+        <plataforma>Multiplataforma</plataforma>
+        <precio>39.99</precio>
+    </videojuego>
+</videojuegos>

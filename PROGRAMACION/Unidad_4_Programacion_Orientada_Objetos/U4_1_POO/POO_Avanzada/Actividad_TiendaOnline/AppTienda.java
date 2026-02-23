@@ -36,7 +36,7 @@ public class AppTienda {
 
         // Productos
         catalogo[numProductos++] = new Alimentacion("P01", "Manzana", 0.5, 50, "Huerta", LocalDate.now().plusDays(7));
-        catalogo[numProductos++] = new Alimentacion("P08", "Pantalones", 15.0, 20, "Nike", "L", "Azul");
+        catalogo[numProductos++] = new Ropa("P08", "Pantalones", 15.0, 20, "Nike", "L", "Azul");
         catalogo[numProductos++] = new Electronica("P02", "Teclado", 25.0, 10, "Logitech", 24, "Logitech"); 
         catalogo[numProductos++] = new Electronica("P03", "Teclado", 25.0, 10, "Logitech", 24, "Logitech");
         catalogo[numProductos++] = new Ropa("P04", "Zapatillas", 25.0, 10, "Adidas", "42", "Negro");  

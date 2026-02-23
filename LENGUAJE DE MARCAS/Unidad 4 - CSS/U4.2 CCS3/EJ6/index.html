@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 6</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas id="lienzo-fondo"></canvas>
+    <header>
+      <h1 class="titulo">Ejercicio 6</h1>
+    </header>
+    <div class="contenedor">
+      <h1>Catálogo de Videojuegos</h1>
+      <div class="controles">
+        <input type="text" id="buscar" placeholder="Buscar videojuego" />
+        <select id="filtro-genero">
+          <option value="todos">Todos los géneros</option>
+          <option value="accion">Acción</option>
+          <option value="aventura">Aventura</option>
+          <option value="rpg">RPG</option>
+          <option value="sandbox">Sandbox</option>
+        </select>
+
+        <button id="cargar">Cargar Videojuegos</button>
+        <button id="limpiar">Limpiar filtros</button>
+      </div>
+      <div id="estadisticas"></div>
+      <div class="catalogo" id="catalogo">
+        Pulsa "Cargar Videojuegos" para ver la lista!
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

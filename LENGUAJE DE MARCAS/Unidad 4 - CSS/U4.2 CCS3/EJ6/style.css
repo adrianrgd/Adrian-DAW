@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Silkscreen:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+:root {
+  --bg: #0b0b13;
+  --surface: #13131f;
+  --surface2: #1a1a2c;
+  --surface3: #1f1f38;
+  --border: #252545;
+  --border-lt: #4040a0;
+  --border-gl: #5555cc;
+  --titlebar: linear-gradient(
+    90deg,
+    #0f0faa 0%,
+    #4444cc 40%,
+    #6666ee 50%,
+    #4444cc 60%,
+    #0f0faa 100%
+  );
+  --accent: #6688ff;
+  --accent2: #ff6eb4;
+  --accent3: #4ddd72;
+  --accent4: #ffc85a;
+  --accent5: #a78bfa;
+  --text: #dcdcf5;
+  --soft: #8888bb;
+  --muted: #4a4a70;
+  --white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: var(--surface) var(--bg);
+  scrollbar-width: thin;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 200vh;
+  overflow-x: hidden;
+}
+
+/* scanlines */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 20, 0.05) 0px,
+    rgba(0, 0, 20, 0.05) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  pointer-events: none;
+  z-index: 9000;
+}
+
+#lienzo-fondo {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 3rem;
+  padding: 20px;
+  font-weight: bold;
+  color: var(--white);
+  text-shadow: 0 0 10px var(--accent);
+}
+
+.contenedor {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 30px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.controles {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+  width: 300px;
+}
+
+.controles input,
+.controles select {
+  padding: 15px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.controles button {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 15px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--accent5);
+  color: var(--bg);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.controles button:hover {
+  transform: scale(1.03);
+  background: var(--accent2);
+}
+
+.estadisticas {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+  width: 300px;
+}
