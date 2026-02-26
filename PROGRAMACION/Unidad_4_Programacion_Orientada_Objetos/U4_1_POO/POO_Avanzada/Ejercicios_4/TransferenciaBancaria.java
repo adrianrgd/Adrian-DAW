@@ -1,0 +1,3 @@
+class TransferenciaBancaria {
+    String Iban;
+}

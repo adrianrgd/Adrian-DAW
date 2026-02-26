@@ -1,0 +1,51 @@
+Salario Base = 1700€
+Plus Convenio = 250€
+Plus Transporte = 300€
+
+2 pagas extra NO prorrateadas (SB + Plus Convenio)
+
+Horas extra = 150€
+
+IRPF = 12%
+CONTRATO INDEFINIDO
+GRUPO COTIZACIÓN = 3
+
+Nomina del 1 al 18 de enero.
+
+---------------------------------------------------------------
+
+CONCEPTOS
+
+SB = 1700 / 30 * 18 = 1020€
+
+Plus Convenio = 250 / 30 * 18 = 150€
+
+Plus Transporte = 300 / 30 * 18 = 180€
+
+Pagas extra = 1700 + 250 = 1950€ * 2 = 3900€ / 12 = 325€ / 30 * 18 = 195€ (Cotizados al mes)
+
+---------------------------------------------------------------
+
+B.C.C.C = 1020 + 180 + 150 + 195 = 1545€
+
+B.C.C.P = 1020 + 180 + 150 + 195 + 150 = 1695€
+
+Salario Bruto = 1020 + 180 + 150 + 150 = 1500€ 
+
+---------------------------------------------------------------
+
+Retenciones 
+
+B.C.C.C = 1545 / 4.85% = 75€
+
+B.C.C.P = 1695 / 1.55% (Desempleo) + 0.10% (FP) = 28€
+
+Salario Bruto = 1500 / 12% = 180€
+
+Horas extra = 150 / 4.7% = 7.05€
+
+Total Retenciones = 75 + 28 + 180 + 7.05 = 290.05€
+
+---------------------------------------------------------------
+
+Salaria Neto = 1500 - 290 = 1210€
