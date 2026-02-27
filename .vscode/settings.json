@@ -41,5 +41,10 @@
   ],
   "java.project.referencedLibraries": [],
   "editor.inlineSuggest.edits.allowCodeShifting": "horizontal",
-  "editor.inlineSuggest.edits.showLongDistanceHint": false
+  "editor.inlineSuggest.edits.showLongDistanceHint": false,
+
+  "[sql]": {
+    "editor.formatOnSave": false
+  },
+  "muty-pptviewer.libreOfficePath": "C:\\Program Files\\LibreOffice\\program\\simpress.exe"
 }
