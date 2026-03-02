@@ -12,6 +12,7 @@
                             <xs:element name="genero" type="xs:string"/>
                             <xs:element name="plataforma" type="xs:string"/>
                             <xs:element name="precio" type="xs:decimal"/>
+                            <xs:element name="valoracion" type="xs:integer"/>
                         </xs:sequence>
                         <xs:attribute name="id" type="xs:integer" use="required"/>
                     </xs:complexType>

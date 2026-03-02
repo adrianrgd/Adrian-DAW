@@ -8,14 +8,16 @@
         <genero>Sandbox</genero>
         <plataforma>Multiplataforma</plataforma>
         <precio>29.90</precio>
+        <valoracion>93</valoracion>
     </videojuego>
     <videojuego>
         <titulo id='2'>Grand Theft Auto V</titulo>
         <estudio>Rockstar Games</estudio>
         <lanzamiento>2013</lanzamiento>
-        <genero>Acción</genero>
+        <genero>Acción-Aventura</genero>
         <plataforma>Multiplataforma</plataforma>
         <precio>19.99</precio>
+        <valoracion>97</valoracion>
     </videojuego>
     <videojuego>
         <titulo id='3'>The Witcher 3: Wild Hunt</titulo>
@@ -24,6 +26,7 @@
         <genero>RPG</genero>
         <plataforma>Multiplataforma</plataforma>
         <precio>29.99</precio>
+        <valoracion>92</valoracion>
     </videojuego>
     <videojuego>
         <titulo id='4'>The Legend of Zelda: Breath of the Wild</titulo>
@@ -32,13 +35,132 @@
         <genero>Acción-Aventura</genero>
         <plataforma>Nintendo Switch</plataforma>
         <precio>59.99</precio>
+        <valoracion>97</valoracion>
     </videojuego>
     <videojuego>
-        <titulo id='5'>Red Dead Redemption 2</titulo>
+        <titulo id='5'>Bloodborne</titulo>
+        <estudio>FromSoftware</estudio>
+        <lanzamiento>2015</lanzamiento>
+        <genero>RPG</genero>
+        <plataforma>PlayStation 4</plataforma>
+        <precio>19.99</precio>
+        <valoracion>92</valoracion>
+    </videojuego>
+    <videojuego>
+        <titulo id='6'>Elden Ring</titulo>
+        <estudio>FromSoftware</estudio>
+        <lanzamiento>2022</lanzamiento>
+        <genero>RPG</genero>
+        <plataforma>Multiplataforma</plataforma>
+        <precio>59.99</precio>
+        <valoracion>96</valoracion>
+    </videojuego>
+    <videojuego>
+        <titulo id='7'>God of War</titulo>
+        <estudio>Santa Monica Studio</estudio>
+        <lanzamiento>2018</lanzamiento>
+        <genero>Acción-Aventura</genero>
+        <plataforma>Multiplataforma</plataforma>
+        <precio>19.99</precio>
+        <valoracion>94</valoracion>
+    </videojuego>
+    <videojuego>
+        <titulo id='8'>Red Dead Redemption 2</titulo>
         <estudio>Rockstar Games</estudio>
         <lanzamiento>2018</lanzamiento>
         <genero>Acción-Aventura</genero>
         <plataforma>Multiplataforma</plataforma>
-        <precio>39.99</precio>
+        <precio>59.99</precio>
+        <valoracion>97</valoracion>
+    </videojuego>
+    <videojuego>
+        <titulo id='9'>Cyberpunk 2077</titulo>
+        <estudio>CD Projekt Red</estudio>
+        <lanzamiento>2020</lanzamiento>
+        <genero>RPG</genero>
+        <plataforma>Multiplataforma</plataforma>
+        <precio>49.99</precio>
+        <valoracion>86</valoracion>
+    </videojuego>
+    <videojuego>
+        <titulo id='10'>Hollow Knight</titulo>
+        <estudio>Team Cherry</estudio>
+        <lanzamiento>2017</lanzamiento>
+        <genero>Metroidvania</genero>
+        <plataforma>Multiplataforma</plataforma>
+        <precio>14.99</precio>
+        <valoracion>90</valoracion>
+    </videojuego>
+    <videojuego>
+        <titulo id='11'>Half-Life: Alyx</titulo>
+        <estudio>Valve</estudio>
+        <lanzamiento>2020</lanzamiento>
+        <genero>VR</genero>
+        <plataforma>PC</plataforma>
+        <precio>58.99</precio>
+        <valoracion>93</valoracion>
+    </videojuego>
+    <videojuego>
+        <titulo id='12'>Baldur's Gate 3</titulo>
+        <estudio>Larian Studios</estudio>
+        <lanzamiento>2023</lanzamiento>
+        <genero>RPG</genero>
+        <plataforma>Multiplataforma</plataforma>
+        <precio>59.99</precio>
+        <valoracion>96</valoracion>
+    </videojuego>
+    <videojuego>
+        <titulo id='13'>Hades</titulo>
+        <estudio>Supergiant Games</estudio>
+        <lanzamiento>2020</lanzamiento>
+        <genero>Roguelike</genero>
+        <plataforma>Multiplataforma</plataforma>
+        <precio>24.50</precio>
+        <valoracion>93</valoracion>
+    </videojuego>
+    <videojuego>
+        <titulo id='14'>Stardew Valley</titulo>
+        <estudio>ConcernedApe</estudio>
+        <lanzamiento>2016</lanzamiento>
+        <genero>Simulación</genero>
+        <plataforma>Multiplataforma</plataforma>
+        <precio>13.99</precio>
+        <valoracion>89</valoracion>
+    </videojuego>
+    <videojuego>
+        <titulo id='15'>Portal 2</titulo>
+        <estudio>Valve</estudio>
+        <lanzamiento>2011</lanzamiento>
+        <genero>Puzzle</genero>
+        <plataforma>Multiplataforma</plataforma>
+        <precio>9.75</precio>
+        <valoracion>95</valoracion>
+    </videojuego>
+    <videojuego>
+        <titulo id='16'>Cities Skylines</titulo>
+        <estudio>Colossal Order</estudio>
+        <lanzamiento>2015</lanzamiento>
+        <genero>Simulación</genero>
+        <plataforma>Multiplataforma</plataforma>
+        <precio>29.99</precio>
+        <valoracion>85</valoracion>
+    </videojuego>
+    <videojuego>
+        <titulo id='17'>VrChat</titulo>
+        <estudio>VRChat Inc.</estudio>
+        <lanzamiento>2014</lanzamiento>
+        <genero>VR</genero>
+        <plataforma>Multiplataforma</plataforma>
+        <precio>0.00</precio>
+        <valoracion>75</valoracion>
+    </videojuego>
+    <videojuego>
+        <titulo id='18'>Poppy Playtime: Chapter 5</titulo>
+        <estudio>MOB Entertainment</estudio>
+        <lanzamiento>2026</lanzamiento>
+        <genero>Survival Horror</genero>
+        <plataforma>PC</plataforma>
+        <precio>19.99</precio>
+        <valoracion>74</valoracion>
     </videojuego>
 </videojuegos>
