@@ -181,7 +181,7 @@ SHOW GRANTS FOR 'profesor' @'localhost';
 +--------------------------------------------------------------------------------+
 | GRANT USAGE ON *.* TO `profesor`@`localhost`                                   |
 | GRANT SELECT, INSERT ON `bdcentroidiomas`.`profesor` TO `profesor`@`localhost` |
-+--------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------+º
 
 -- No pueden actualizar la tabla profesor porque no tienen permiso UPDATE.
 

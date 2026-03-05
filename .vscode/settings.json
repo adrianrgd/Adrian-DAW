@@ -1,32 +1,8 @@
 {
-  "folder-color.pathColors": [
-    {
-      "folderPath": "Adrián DAW\\LENGUAJE DE MARCAS\\",
-      "color": "foldercolorizer.color_33ccff"
-    },
-    {
-      "folderPath": "Adrián DAW\\BASES DE DATOS\\",
-      "color": "foldercolorizer.color_ff9933"
-    },
-    {
-      "folderPath": "Adrián DAW\\ENTORNOS DE DESAROLLO\\",
-      "color": "foldercolorizer.color_cc6699"
-    },
-    {
-      "folderPath": "Adrián DAW\\SISTEMAS INFORMATICOS\\",
-      "color": "foldercolorizer.color_999999"
-    },
-    {
-      "folderPath": "Adrián DAW\\EMPLEABILIDAD\\",
-      "color": "foldercolorizer.color_cccc66"
-    },
-    {
-      "folderPath": "Adrián DAW\\PROGRAMACION\\",
-      "color": "foldercolorizer.color_00cc99"
-    }
-  ],
   "git.ignoreLimitWarning": true,
   "java.project.sourcePaths": [
+    "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Interfaces/Ejemplo",
+    "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios_4",
     "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios_3/Sobrecarga",
     "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios_3/Parametros",
     "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios_3/Instancias",
@@ -37,14 +13,11 @@
     "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Composicion/Coche",
     "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Agregacion/Universidad",
     "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Agregacion/Biblioteca",
-    "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios_4"
+    "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Interfaces"
   ],
-  "java.project.referencedLibraries": [],
-  "editor.inlineSuggest.edits.allowCodeShifting": "horizontal",
-  "editor.inlineSuggest.edits.showLongDistanceHint": false,
-
+  "java.project.referencedLibraries": [
+  ],
   "[sql]": {
     "editor.formatOnSave": false
-  },
-  "muty-pptviewer.libreOfficePath": "C:\\Program Files\\LibreOffice\\program\\simpress.exe"
+  }
 }
