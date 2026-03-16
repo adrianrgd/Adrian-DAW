@@ -1,0 +1,75 @@
+body {
+    background-color: #333;
+    color: white;
+    font-family: 'Departure Mono', 'Lexend', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.titulo {
+    font-family: 'Lexend';
+    font-size: 3rem;
+    font-weight: bold;
+    animation: textoTitulo 5s ease-in-out infinite;
+}
+
+@keyframes textoTitulo {
+    0% {
+        color: #afd4ff;
+    }
+    25% {
+        color: #ffd3a1;
+    }
+    50% {
+        color: #9bff9b;
+    }
+    75% {
+        color: #ffa1f2;
+    }
+    100% {
+        color: #afd4ff;
+    }
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+}
+
+.textoAcceso {
+    font-family: 'Rubik';
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.botonAcceso {
+    font-family: 'Rubik';
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: 10px;
+    background-color: #afd4ff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.botonAcceso:hover {
+    background-color: #5177a3;
+    color: white;
+    transform: scale(1.1);
+}
+

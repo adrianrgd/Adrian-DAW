@@ -1,0 +1,152 @@
+body {
+    background-color: #333;
+    color: white;
+    font-family: 'Departure Mono', 'Lexend', monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: grid;
+    grid-template-areas: 
+    'titulo'
+    'nav'
+    'main';
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.titulo {
+    grid-area: titulo;
+    font-family: 'Lexend';
+    font-size: 3rem;
+    font-weight: bold;
+    animation: textoTitulo 5s ease-in-out infinite;
+}
+
+@keyframes textoTitulo {
+    0% {
+        color: #afd4ff;
+    }
+    25% {
+        color: #ffd3a1;
+    }
+    50% {
+        color: #9bff9b;
+    }
+    75% {
+        color: #ffa1f2;
+    }
+    100% {
+        color: #afd4ff;
+    }
+}
+
+.buscador {
+    grid-area: nav;
+    font-family: 'Departure Mono', monospace;
+    font-size: 1rem;
+    font-style: italic;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+}
+
+.botonBuscar {
+    grid-area: nav;
+    background-color: #afd4ff;
+    font-family: 'Departure Mono', monospace;
+    font-size: 1rem;
+    font-style: italic;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botonBuscar:hover {
+    background-color: #5177a3;
+    color: white;
+    transform: scale(1.1);
+}
+
+.selectModo {
+    grid-area: nav;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-grow: 1;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-areas: 
+    'tarjeta';
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tarjeta {
+    grid-area: tarjeta;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 300px;
+    height: 400px;
+    background-color: #1a1a1a;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.tarjeta .contenidoTarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta .contenidoTarjeta h2 {
+    font-family: 'Lexend';
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.tarjeta .contenidoTarjeta p {
+    font-family: 'Departure Mono', monospace;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.tarjeta .linea {
+    width: 100%;
+    height: 1px;
+    background-color: #afd4ff;
+    margin: 0px;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+

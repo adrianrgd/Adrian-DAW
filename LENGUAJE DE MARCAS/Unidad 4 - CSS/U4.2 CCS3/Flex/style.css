@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 25px;
+    column-gap: 5px;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    color: white;
+    margin: 10px;
+}
