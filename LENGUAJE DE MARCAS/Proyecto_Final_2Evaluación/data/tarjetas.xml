@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tarjetas>
     <tarjeta>
-        <imagen></imagen>
-        <Nombre></Nombre>
-        <texto></texto>
+        <imagen>img/Captura de pantalla 2026-02-13 102300.png</imagen>
+        <Nombre>Malaga</Nombre>
+        <texto>La capital de la Costa del Sol, conocida por sus playas, su Alcazaba y su ambiente
+            vibrante.</texto>
     </tarjeta>
 </tarjetas>
