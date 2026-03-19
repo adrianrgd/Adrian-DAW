@@ -69,12 +69,24 @@ ADD PRIMARY KEY (dni);
 'bilingüe' a 'S' y todavía no se encuentran en la tabla. Todos con la fecha
 actual (CURRENT_DATE()) y sin 'lugar'. Utiliza un INSERT SELECT."
 
-
+INSERT INTO alumbil (dni, fecha, lugar)
+SELECT dni, CURRENT_DATE(), NULL
+FROM alumno
+WHERE bilingue = 'S'
+AND dni NOT IN (SELECT dni FROM alumbil);
 
 9. "Modifica la tabla contrato para que su campo codcont sea autonumérico."
 
+ALTER TABLE contrato 
+MODIFY codcont INT AUTO_INCREMENT;
 
 
 10. "Utilizando un INSERT..SELECT, añade un registro en la tabla CONTRATO para
 cada profesor, teniendo en cuenta que CONTRATO.curso debe corresponder
 con el primer curso en el que cada profesor impartió alguna asignatura."
+
+INSERT INTO contrato (codcont, dni, curso)
+SELECT NULL, dni, MIN(curso)
+FROM profesor
+JOIN imparte ON profesor.dni = imparte.dni
+GROUP BY profesor.dni;

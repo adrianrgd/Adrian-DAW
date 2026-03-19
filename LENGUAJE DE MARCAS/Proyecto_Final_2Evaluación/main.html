@@ -8,40 +8,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>PROYECTO LENGUAJE DE MARCAS</title>
 </head>
-<body>
+<body class="grid-container">
     <header class="header">
-        <h1 class="titulo">Titulo Provisional</h1>
+        <h1 class="titulo">MI GALERÍA</h1>
         <div class="nav">
-            <ul>
-                <input class="buscador" type="text" placeholder="Buscar">
-                <button class="botonBuscar"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </ul>
-            <select name="modoPagina" id="selectModo">
-                <option value="1" selected>Modo Oscuro</option>
-                <option value="2">Modo Claro</option>
-                <option value="3">Personalizado</option>
-            </select>
-            <div class="AñadirTarjeta">
-                <button class="btnAñadirTarjeta"><i class="fa-solid fa-plus"></i>Añadir Tarjeta</button>
+            <div class="busqueda-group">
+                <input class="buscador" type="text" id="inputBusqueda" placeholder="Buscar título...">
+                <button class="botonBuscar" id="btnBuscar"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
+            
+            <select id="selectModo" class="selector-tema">
+                <option value="oscuro">Modo Oscuro</option>
+                <option value="claro">Modo Claro</option>
+                <option value="personalizado">Personalizado</option>
+            </select>
+
+            <button class="btnAñadirTarjeta" id="btnAbrirModal">
+                <i class="fa-solid fa-plus"></i> Añadir Tarjeta
+            </button>
         </div>
     </header>
+
     <main class="main">
-        <div class="contenedor">
-            <div class="tarjeta">
-                <section class="seccionImagen">
-                    <img id="imagenTarjeta" src="img/Captura de pantalla 2026-02-13 102300.png" alt="Imagen provisional">
-                </section>
-                <section class="seccionContenido">
-                    <h2 id="tituloTarjeta">Titulo Provisional</h2>
-                    <hr class="linea">
-                    <p id="textoTarjeta">Texto Provisional de prueba para una descripción más larga de la tarjeta</p>
-                </section>
+        <div class="contenedor" id="contenedorTarjetas">
             </div>
-        </div>
     </main>
-    <script src="scripts/main.js"></script>
+
+    <footer class="footer">
+        <p>&copy; 2026 - Proyecto Final Lenguaje de Marcas - Mi Galería</p>
+    </footer>
+
+    <div id="modalAlta" class="modal">
+        <div class="ventana modal-contenido">
+            <div class="barra-titulo">
+                <div class="texto-titulo">NUEVA_ENTRADA.SYS</div>
+                <button class="bt-cerrar">×</button>
+            </div>
+            <form id="formNuevaTarjeta" class="cuerpo-ventana">
+                <input type="text" id="nuevoNombre" placeholder="Nombre del lugar" required>
+                <textarea id="nuevoTexto" placeholder="Descripción..." required></textarea>
+                <input type="file" id="nuevaImagen" accept="image/*" required>
+                <button type="submit" class="boton-enlace">GUARDAR EN XML</button>
+            </form>
+        </div>
+    </div>
 </body>
-</html>
