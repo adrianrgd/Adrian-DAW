@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tarjetas>
+    <tarjeta>
+        <titulo>Renfe Civia 465</titulo>
+        <imagen>img/Civia-465.png</imagen>
+        <año>2004 - Presente</año>
+        <fabricante>CAF, Alstom, Siemens</fabricante>
+        <composicion>5 coches</composicion>
+        <texto>Tren eléctrico moderno para servicios de Cercanías. Destaca por su accesibilidad,
+            diseño modular y piso bajo continuo para facilitar la entrada a personas con movilidad
+            reducida.</texto>
+    </tarjeta>
+
+    <tarjeta>
+        <titulo>Renfe Civia 463</titulo>
+        <imagen>img/Civia-463.jpg</imagen>
+        <año>2004 - Presente</año>
+        <fabricante>CAF, Alstom, Siemens</fabricante>
+        <composicion>3 coches</composicion>
+        <texto>Versión de tres coches de la serie 465. Mantiene todas las
+            ventajas de accesibilidad y piso bajo continuo, pero está diseñado para líneas de
+            Cercanías con una demanda de pasajeros algo menor.</texto>
+    </tarjeta>
+
+    <tarjeta>
+        <titulo>Renfe Serie 446</titulo>
+        <imagen>img/Serie-446.jpg</imagen>
+        <año>1989 - 1993</año>
+        <fabricante>CAF, Macosa, MTM</fabricante>
+        <composicion>3 coches</composicion>
+        <texto>Clásicos trenes eléctricos de Cercanías. Fueron diseñados específicamente para
+            trayectos con paradas muy frecuentes gracias a su enorme capacidad de aceleración,
+            aunque su velocidad punta es menor (100 km/h).</texto>
+    </tarjeta>
+
+    <tarjeta>
+        <titulo>Renfe Serie 447</titulo>
+        <imagen>img/Serie-447.jpg</imagen>
+        <año>1993 - 2001</año>
+        <fabricante>CAF, Alstom, Siemens</fabricante>
+        <composicion>3 coches</composicion>
+        <texto>Evolución directa de la serie 446. Aunque exteriormente son casi idénticos, cuentan
+            con mejores prestaciones técnicas, mayor velocidad máxima (120 km/h) y asientos
+            adaptados para trayectos ligeramente más largos.</texto>
+    </tarjeta>
+
+    <tarjeta>
+        <titulo>Renfe Serie 490</titulo>
+        <imagen>img/Serie-490.jpg</imagen>
+        <año>1998 - 2014</año>
+        <fabricante>Fiat Ferroviaria, Alstom</fabricante>
+        <composicion>3 coches</composicion>
+        <texto>Trenes automotores eléctricos de alta velocidad (Pendolino) conocidos por el servicio
+            Alaris. Destacaban por su sistema de basculación activa, que les permitía tomar curvas a
+            mayor velocidad de forma segura.</texto>
+    </tarjeta>
+
+    <tarjeta>
+        <titulo>Renfe Serie 592</titulo>
+        <imagen>img/Serie-592.jpg</imagen>
+        <año>1981 - 1984</año>
+        <fabricante>Macosa, Ateinsa (Motores MAN)</fabricante>
+        <composicion>3 coches</composicion>
+        <texto>Icónico automotor diésel apodado popularmente "Camello" debido a las cajas del aire
+            acondicionado que sobresalen en su techo. Fueron fundamentales para la vertebración de
+            líneas regionales sin electrificar.</texto>
+    </tarjeta>
+</tarjetas>

@@ -1,0 +1,341 @@
+/* Variables para poder cambiar los colores facil luego */
+:root {
+    --bg-header: #f8f9fa; /* Un pelín gris muy claro para diferenciarlo */
+    --bg-main: #f0f2f5;   /* Gris de fondo un poco mas oscurito */
+    --bg-footer: #e9ecef; /* Otro gris suave para el pie de pagina */
+    --bg-tarjeta: #ffffff; /* Color exclusivo para las tarjetas */
+    --bg-elementos: #ffffff; /* Color para el buscador, botones y ventanas */
+    --text-color: #1e293b;
+    --text-secundario: #64748b;
+    --card-shadow: rgba(0,0,0,0.08);
+}
+
+/* Colores para cuando se pone el modo oscuro */
+body.tema-oscuro {
+    --bg-header: #1a1b1e;
+    --bg-main: #25262b;
+    --bg-footer: #141517;
+    --bg-tarjeta: #2c2e33;
+    --bg-elementos: #2c2e33;
+    --text-color: #c1c2c5;
+    --text-secundario: #9ca3af;
+    --card-shadow: rgba(0,0,0,0.3);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hacemos la estructura de la pagina con grid como pide la practica */
+body {
+    font-family: 'Outfit', Arial, sans-serif;
+    color: var(--text-color);
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: var(--bg-main);
+}
+
+/* Magia para la animacion: hacemos que todo cambie de color de forma suave a la vez */
+body, .header, .main, .footer, .tarjeta, .buscador, select, button, .ventana, .cuerpo-ventana input, .cuerpo-ventana textarea {
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.header {
+    grid-area: header;
+    background-color: var(--bg-header);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.main {
+    grid-area: main;
+    background-color: var(--bg-main);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: var(--bg-footer);
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+}
+
+.controles {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.caja-buscador {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.caja-buscador i {
+    position: absolute;
+    left: 15px;
+    color: #888;
+}
+
+.buscador {
+    padding: 10px 10px 10px 35px;
+    border-radius: 20px;
+    border: 1px solid #cbd5e1;
+    outline: none;
+    width: 250px;
+    font-family: inherit;
+    background-color: var(--bg-elementos);
+    color: var(--text-color);
+}
+
+select, button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--bg-elementos);
+    color: var(--text-color);
+}
+
+.btn-accion {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+}
+
+.btn-accion:hover {
+    background-color: #2563eb;
+}
+
+.btn-icono {
+    background-color: var(--bg-elementos); /* Le ponemos fondo para que no sea transparente */
+    border: 1px solid #cbd5e1;
+    padding: 10px 15px;
+}
+
+.btn-icono:hover {
+    background-color: #3b82f6;
+    color: white;
+    border-color: #3b82f6;
+}
+
+/* Esto es para que las tarjetas salgan ordenadas en filas y columnas */
+.cuadricula {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    align-items: start;
+}
+
+/* Diseño de cada tarjeta con flexbox */
+.tarjeta {
+    background-color: var(--bg-tarjeta); /* Aqui usamos la variable exclusiva de tarjeta */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px var(--card-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 530px;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.tarjeta h3 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tarjeta h3 i {
+    color: #3b82f6;
+    margin-right: 5px;
+}
+
+.datos-tecnicos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 8px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--text-secundario);
+}
+
+.datos-tecnicos span i {
+    color: #3b82f6;
+    width: 20px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+hr.separador {
+    width: 80%;
+    border: 0;
+    border-top: 1px solid var(--text-color);
+    opacity: 0.15;
+    margin: 15px 0;
+}
+
+.tarjeta p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    opacity: 0.9;
+    margin: 0;
+    width: 100%;
+    max-height: 130px;
+    overflow-y: auto;
+}
+
+.tarjeta p i {
+    color: #888;
+    margin-right: 3px;
+}
+
+/* Estilos de las ventanas emergentes que salen por encima */
+.modal {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.oculto {
+    display: none;
+}
+
+.ventana {
+    background: var(--bg-elementos);
+    padding: 25px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.cabecera-ventana {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn-cerrar {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    padding: 5px 10px;
+}
+
+.btn-cerrar:hover {
+    color: #ef4444;
+}
+
+.cuerpo-ventana {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cuerpo-ventana input[type="text"],
+.cuerpo-ventana textarea,
+.cuerpo-ventana input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background: var(--bg-main);
+    color: var(--text-color);
+    font-family: inherit;
+}
+
+.cuerpo-ventana textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.btn-guardar {
+    background-color: #10b981;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-guardar:hover {
+    background-color: #059669;
+}
+
+.panel-colores {
+    background-color: #313338;
+    color: #f2f3f5;
+    border: 1px solid #1e1f22;
+}
+
+.panel-colores .btn-cerrar {
+    color: #b5bac1;
+}
+
+.fila-color {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2b2d31;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.fila-color input[type="color"] {
+    border: none;
+    width: 40px;
+    height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0;
+    background: transparent;
+}
+
+.btn-aplicar-colores {
+    background-color: #5865F2;
+    color: white;
+}
+
+.btn-aplicar-colores:hover {
+    background-color: #4752C4;
+}

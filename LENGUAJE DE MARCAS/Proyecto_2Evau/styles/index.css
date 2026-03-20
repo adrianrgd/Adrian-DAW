@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: 'Outfit', Arial, sans-serif;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#lienzo-fondo {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.header-inicio {
+    z-index: 1;
+    text-align: center;
+}
+
+.titulo-animado {
+    font-size: 5rem;
+    animation: cambiarColor 4s infinite alternate;
+    font-family: 'Silkscreen', monospace;
+    margin-bottom: 50px;
+    text-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+@keyframes cambiarColor {
+    0% { color: #d8afff; transform: scale(1); }
+    100% { color: #ff9b77; transform: scale(1.05); }
+}
+
+.contenedor-acceso {
+    text-align: center;
+    z-index: 1;
+    background: rgba(20, 20, 20, 0.7);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.contenedor-acceso p {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'JetBrains Mono', monospace;
+    margin-bottom: 30px;
+}
+
+.boton-acceso {
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+    animation: latido 2.5s infinite ease-in-out;
+}
+
+.boton-acceso i {
+    margin-left: 8px;
+}
+
+.boton-acceso:hover {
+    background-color: #2563eb;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.8);
+    animation: none;
+}
+
+@keyframes latido {
+    0% { box-shadow: 0 0 15px rgba(59, 130, 246, 0.4); }
+    50% { box-shadow: 0 0 30px rgba(59, 130, 246, 0.9); }
+    100% { box-shadow: 0 0 15px rgba(59, 130, 246, 0.4); }
+}
+
+/*responsive*/
+@media (max-width: 768px) {
+    .titulo-animado {
+        font-size: 3rem;
+    }
+    .contenedor-acceso {
+        padding: 20px;
+    }
+    .boton-acceso {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}

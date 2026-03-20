@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Galería Ferroviaria</title>
+</head>
+<body class="tema-claro">
+    <header class="header">
+        <h1 class="titulo"><i class="fa-solid fa-train-subway"></i> Galería Ferroviaria</h1>
+        
+        <div class="controles">
+            <div class="caja-buscador">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="buscador" type="text" id="buscador" placeholder="Buscar tren...">
+            </div>
+
+            <select id="selectorTema" class="selector-tema">
+                <option value="claro">Modo Claro</option>
+                <option value="oscuro">Modo Oscuro</option>
+                <option value="personalizado">Personalizado</option>
+            </select>
+
+            <button class="btn-icono" id="btnPaleta" title="Configurar Tema">
+                <i class="fa-solid fa-palette"></i>
+            </button>
+
+            <button class="btn-accion" id="btnAbrirAñadir">
+                <i class="fa-solid fa-plus"></i> Añadir Tren
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="cuadricula" id="contenedorTarjetas"></div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 - Proyecto 2Evau LM - Galería Ferroviaria</p>
+    </footer>
+
+    <div id="modalAñadir" class="modal oculto">
+        <div class="ventana">
+            <div class="cabecera-ventana">
+                <h2><i class="fa-solid fa-train-tram"></i> Añadir Nuevo Tren</h2>
+                <button class="btn-cerrar" id="btnCerrarAñadir"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <form id="formularioAñadir" class="cuerpo-ventana">
+                <input type="text" id="inputTitulo" placeholder="Nombre del tren" required>
+                <input type="text" id="inputAño" placeholder="Año o época" required>
+                <input type="text" id="inputFabricante" placeholder="Fabricante" required>
+                <input type="text" id="inputComposicion" placeholder="Composición (Nº coches)" required>
+                <textarea id="inputTexto" placeholder="Descripción de su uso, lugares..." required></textarea>
+                <input type="file" id="inputImagen" accept="image/*" required>
+                <button type="submit" class="btn-guardar"><i class="fa-solid fa-floppy-disk"></i> Guardar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modalTema" class="modal oculto">
+        <div class="ventana panel-colores">
+            <div class="cabecera-ventana">
+                <h2><i class="fa-solid fa-sliders"></i> Personalizar Tema</h2>
+                <button class="btn-cerrar" id="btnCerrarTema"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="cuerpo-ventana">
+                <div class="fila-color">
+                    <label><i class="fa-solid fa-heading"></i> Header</label>
+                    <input type="color" id="colorHeader" value="#2b2d31">
+                </div>
+                <div class="fila-color">
+                    <label><i class="fa-regular fa-window-maximize"></i> Main</label>
+                    <input type="color" id="colorMain" value="#313338">
+                </div>
+                <div class="fila-color">
+                    <label><i class="fa-solid fa-shoe-prints"></i> Footer</label>
+                    <input type="color" id="colorFooter" value="#1e1f22">
+                </div>
+                <div class="fila-color">
+                    <label><i class="fa-solid fa-address-card"></i> Tarjetas</label>
+                    <input type="color" id="colorTarjeta" value="#ffffff">
+                </div>
+                <button id="btnAplicarTema" class="btn-guardar btn-aplicar-colores"><i class="fa-solid fa-check"></i> Aplicar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
