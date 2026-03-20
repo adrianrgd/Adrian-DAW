@@ -14,10 +14,10 @@
     "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Composicion/Coche",
     "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Agregacion/Universidad",
     "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Agregacion/Biblioteca",
-    "PROGRAMACION/Manejo_de_Excepciones"
+    "PROGRAMACION/Manejo_de_Excepciones",
+    "PROGRAMACION/Colecciones"
   ],
-  "java.project.referencedLibraries": [
-  ],
+  "java.project.referencedLibraries": [],
   "[sql]": {
     "editor.formatOnSave": false
   },
