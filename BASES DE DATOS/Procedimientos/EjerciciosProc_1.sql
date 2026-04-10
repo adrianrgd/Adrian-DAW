@@ -87,5 +87,12 @@ SELECT @NombreAlumno;
 -- cuyo código se pasa por parámetro.
 
 
+
++-----------+
+| @maxnota  |
++-----------+
+|         9 |
++-----------+
+
 -- 5. Escribe una función ‘MinNotaCurso’ que devuelva el dni del alumno que ha tenido la menor nota en el curso que 
 -- se pasa como parámetro a la función.
