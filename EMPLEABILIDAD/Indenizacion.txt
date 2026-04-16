@@ -1,0 +1,35 @@
+Indemnización por Despido #1
+
+Salario Base -> 1500
+Plus Transporte -> 200
+Plus Convenio -> 300
+Horas Extras -> 50
+Dietas -> 70
+
+Antigüedad -> 4 años y 6 meses
+33 dias / año
+
+Salario Base -> Si entra
+Plus Transporte -> No entra (No registrado en el convenio, depende de cual sea el convenio)
+Plus Convenio -> Si entra
+Horas Extras -> Si entra
+Dietas -> No computan
+
+1500 + 300 + 50 = 1850/mes
+
+Salario Diario
+1850 * 12 = 22200/año
+22200 / 360 = 61.66/dia
+
+Dias Trabajados
+4 años * 33 dias = 132 dias
+6 meses * 33 dias / 12 = 16.5 dias
+Total = 148.5 dias
+
+Indemnización
+
+61.66 * 148.5 = 9148.71
+
+24 meses * 1850 = 44400/año
+
+
