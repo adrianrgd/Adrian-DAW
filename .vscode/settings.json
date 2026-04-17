@@ -14,8 +14,10 @@
     "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Composicion/Coche",
     "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Agregacion/Universidad",
     "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Agregacion/Biblioteca",
+    "PROGRAMACION/Unidad6/Conjuntos/Ejemplos",
     "PROGRAMACION/Manejo_de_Excepciones",
-    "PROGRAMACION/Colecciones"
+    "PROGRAMACION/Conjuntos",
+    "PROGRAMACION/Unidad6/Ejemplos"
   ],
   "java.project.referencedLibraries": [],
   "[sql]": {
@@ -23,5 +25,7 @@
   },
   "editor.tokenColorCustomizations": {
     "comments": "#acacac"
-  }
+  },
+  "editor.inlineSuggest.edits.renderSideBySide": "never",
+  "editor.inlineSuggest.edits.showLongDistanceHint": false
 }

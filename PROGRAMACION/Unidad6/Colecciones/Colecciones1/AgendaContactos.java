@@ -1,11 +1,12 @@
-package Ejercicios1;
+package Colecciones1;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class AgendaContactos2 {
+public class AgendaContactos {
     public static void main(String[] args) {
-        ArrayList<String[]> contactos = new ArrayList<>();
+        ArrayList<String> nombres = new ArrayList<>();
+        ArrayList<String> telefonos = new ArrayList<>();
 
         int opcion;
         Scanner sc = new Scanner(System.in);
@@ -19,25 +20,25 @@ public class AgendaContactos2 {
             switch (opcion) {
                 case 1:
                     System.out.print("Ingrese el nombre: ");
-                    String[] nombre = new String[2];
-                    nombre[0] = sc.next();
+                    String nombre = sc.next();
+                    nombres.add(nombre);
                     System.out.print("Ingrese el telefono: ");
-                    nombre[1] = sc.next();
-                    contactos.add(nombre);
+                    String telefono = sc.next();
+                    telefonos.add(telefono);
                     break;
                 case 2:
                     System.out.println("Contactos:");
-                    for (int i = 0; i < contactos.size(); i++) {
-                        System.out.println("-> " + contactos.get(i)[0] + " - " + contactos.get(i)[1]);
+                    for (int i = 0; i < nombres.size(); i++) {
+                        System.out.println("-> " + nombres.get(i) + " - " + telefonos.get(i));
                     }
                     System.out.println();
                     break;
                 case 3:
                     System.out.print("Ingrese el nombre a buscar: ");
                     String nombreBusqueda = sc.next();
-                    for (int i = 0; i < contactos.size(); i++) {
-                        if (contactos.get(i)[0].equals(nombreBusqueda)) {
-                            System.out.println("-> " + contactos.get(i)[0] + " - " + contactos.get(i)[1]);
+                    for (int i = 0; i < nombres.size(); i++) {
+                        if (nombres.get(i).equals(nombreBusqueda)) {
+                            System.out.println("-> " + nombres.get(i) + " - " + telefonos.get(i));
                         }
                     }
                     System.out.println();
