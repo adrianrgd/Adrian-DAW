@@ -1,0 +1,59 @@
+Salario Base -> 7500
+Plus Transporte -> 1000
+Plus Convenio -> 2000
+Dietas -> 300
+
+Tiempo trabajado -> 20 años y 64 días.
+
+Despido objetivo -> 20 días por año trabajado
+
+------------------------------------------------------------------
+
+Que entra en la nomina
+
+- Salario base
+- Plus convenio
+
+7500 + 2000 = 9500 (Computo Despido Mensual)
+
+9500 * 12 / 365 = 312.33 (Computo Despido Anual)
+
+20 años * 20 días/año = 400 días
+
+365 - 20
+64 - x
+
+x = 64 * 20 / 365
+x = 3.5
+
+400 + 3.5 = 403.5 (Total días a indemnizar)
+
+312.32 * 403.5 = 126021.126 (Total a pagar)
+
+------------------------------------------------------------------
+
+Tope indemnización -> 12 mensualidades
+
+9500 * 12 = 114000 (Tope)
+
+------------------------------------------------------------------
+
+Vacaciones no disfrutadas
+
+Fecha de la baja -> 14/03/2026
+
+365 - 30
+74 - x
+
+64 + 10 (dias de enero) = 74
+
+x = 74 * 30 / 365
+x = 6.08
+
+312.32 * 6.08 = 1899.59
+
+Finiquito: 114000 + 1899.59 = 115899.59 (Total Indemnización)
+
+
+
+

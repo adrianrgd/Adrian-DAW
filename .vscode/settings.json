@@ -14,10 +14,11 @@
     "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Composicion/Coche",
     "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Agregacion/Universidad",
     "PROGRAMACION/Unidad_4_Programacion_Orientada_Objetos/U4_1_POO/POO_Avanzada/Ejercicios/Agregacion/Biblioteca",
+    "PROGRAMACION/Unidad6/Ejemplos",
     "PROGRAMACION/Unidad6/Conjuntos/Ejemplos",
     "PROGRAMACION/Manejo_de_Excepciones",
     "PROGRAMACION/Conjuntos",
-    "PROGRAMACION/Unidad6/Ejemplos"
+    "PROGRAMACION/Unidad6/Colecciones/Colecciones5/Ejercicio2"
   ],
   "java.project.referencedLibraries": [],
   "[sql]": {
@@ -27,5 +28,9 @@
     "comments": "#acacac"
   },
   "editor.inlineSuggest.edits.renderSideBySide": "never",
-  "editor.inlineSuggest.edits.showLongDistanceHint": false
+  "editor.inlineSuggest.edits.showLongDistanceHint": false,
+  "liveServer.settings.port": 5501,
+  "editor.inlineSuggest.edits.allowCodeShifting": "never",
+  "editor.inlineSuggest.edits.showCollapsed": true,
+  "editor.inlineSuggest.enabled": false
 }
